@@ -118,6 +118,143 @@
                 text-align: center;
             }
 
+            /* --- Problem-Solution & Services Framework Styles --- */
+            .section-header-custom {
+                text-align: center;
+                max-width: 700px;
+                margin: 0 auto 60px auto;
+            }
+
+            .section-header-custom h2 {
+                font-size: 2.25rem;
+                color: #1a202c;
+                margin-bottom: 15px;
+                font-weight: 700;
+            }
+
+            .section-header-custom p {
+                font-size: 1.125rem;
+                color: #718096;
+            }
+
+            .problem-solution-section {
+                padding: 80px 0;
+                background-color: #ffffff;
+                border-bottom: 1px solid #e2e8f0;
+            }
+
+            .problem-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .framework-card {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                background: #f8fafc;
+                border: 1px solid #e2e8f0;
+                border-radius: 12px;
+                overflow: hidden;
+            }
+
+            .problem-box {
+                padding: 40px;
+                background-color: #fff5f5;
+                border-right: 1px solid #fed7d7;
+            }
+
+            .solution-box {
+                padding: 40px;
+                background-color: #f0fff4;
+            }
+
+            .tag {
+                display: inline-block;
+                padding: 4px 12px;
+                border-radius: 9999px;
+                font-size: 0.75rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                letter-spacing: 0.05em;
+            }
+
+            .tag-problem {
+                background-color: #fed7d7;
+                color: #c53030;
+            }
+
+            .tag-solution {
+                background-color: #c6f6d5;
+                color: #22543d;
+            }
+
+            .framework-card h3 {
+                font-size: 1.25rem;
+                margin-bottom: 10px;
+                color: #1a202c;
+            }
+
+            .framework-card p {
+                color: #4a5568;
+                font-size: 0.95rem;
+            }
+
+            .services-section {
+                padding: 80px 0;
+                background-color: #f7fafc;
+            }
+
+            .services-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+            }
+
+            .service-card {
+                background: #ffffff;
+                padding: 40px;
+                border-radius: 12px;
+                border: 1px solid #e2e8f0;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+
+            .service-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+                border-color: #cbd5e0;
+            }
+
+            .service-icon {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            .service-card h3 {
+                font-size: 1.35rem;
+                color: #1a202c;
+                margin-bottom: 15px;
+            }
+
+            .service-card p {
+                color: #4a5568;
+                margin-bottom: 25px;
+                font-size: 0.95rem;
+            }
+
+            .btn-link-custom {
+                color: #2b6cb0;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 0.95rem;
+                transition: color 0.15s ease;
+            }
+
+            .btn-link-custom:hover {
+                color: #1a4373;
+            }
+
             /* Responsive Adjustments for Mobile Devices */
             @media (max-width: 768px) {
                 .header-nav-wrapper {
@@ -147,6 +284,20 @@
                 .btn-get-started {
                     padding: 8px 18px !important;
                     font-size: 0.85rem !important;
+                }
+
+                .framework-card {
+                    grid-template-columns: 1fr;
+                }
+                
+                .problem-box {
+                    border-right: none;
+                    border-bottom: 1px solid #fed7d7;
+                }
+
+                .problem-solution-section,
+                .services-section {
+                    padding: 60px 0;
                 }
             }
 
@@ -275,9 +426,99 @@
         </section>
         <!-- Hero Section End -->
 
-        <!-- Main Content Placeholder Space for Custom Features -->
+        <!-- Main Content Area -->
         <main id="main">
-            <!-- Add custom landing components, highlights, or interactive widgets here -->
+
+            <!-- 1. PROBLEM-SOLUTION FRAMEWORK SECTION -->
+            <section class="problem-solution-section">
+                <div class="container">
+                    <div class="section-header-custom">
+                        <h2>We Handle the Numbers. You Run Your Business.</h2>
+                        <p>Stop wasting weekends on spreadsheets and worrying about tax compliance. We solve your biggest financial headaches.</p>
+                    </div>
+                    
+                    <div class="problem-grid">
+                        <!-- Card 1 -->
+                        <div class="framework-card">
+                            <div class="problem-box">
+                                <span class="tag tag-problem">The Frustration</span>
+                                <h3>Wasting Hours on Bookkeeping</h3>
+                                <p>Drowning in receipts and running out of time to actually grow your business operations.</p>
+                            </div>
+                            <div class="solution-box">
+                                <span class="tag tag-solution">Our Solution</span>
+                                <h3>Automated Monthly Bookkeeping</h3>
+                                <p>We reconcile your accounts, organize receipts, and deliver clean, audit-ready financial statements monthly.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="framework-card">
+                            <div class="problem-box">
+                                <span class="tag tag-problem">The Anxiety</span>
+                                <h3>Missing Costly Tax Deductions</h3>
+                                <p>Leaving hard-earned money on the table due to ever-changing tax codes and compliance laws.</p>
+                            </div>
+                            <div class="solution-box">
+                                <span class="tag tag-solution">Our Solution</span>
+                                <h3>Proactive Strategic Tax Planning</h3>
+                                <p>Year-round tax strategies engineered to legally minimize your liability and maximize deductions.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="framework-card">
+                            <div class="problem-box">
+                                <span class="tag tag-problem">The Blindspot</span>
+                                <h3>No Clear Financial Visibility</h3>
+                                <p>Making critical business decisions based on guesswork and gut feeling rather than hard data.</p>
+                            </div>
+                            <div class="solution-box">
+                                <span class="tag tag-solution">Our Solution</span>
+                                <h3>Fractional CFO Advisory</h3>
+                                <p>Custom financial forecasting, cash-flow analysis, and monthly strategy calls to scale predictably.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. CORE SERVICES GRID SECTION -->
+            <section class="services-section">
+                <div class="container">
+                    <div class="section-header-custom">
+                        <h2>Our Core Services</h2>
+                        <p>Tailored financial management designed to protect your profits and streamline workflows.</p>
+                    </div>
+
+                    <div class="services-grid">
+                        <!-- Service 1 -->
+                        <div class="service-card">
+                            <div class="service-icon">📊</div>
+                            <h3>Full-Service Bookkeeping</h3>
+                            <p>Clean, accurate books kept up-to-date weekly using secure cloud platforms like QuickBooks and Xero.</p>
+                            <a href="services.html" class="btn-link-custom">Learn More &rarr;</a>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div class="service-card">
+                            <div class="service-icon">💼</div>
+                            <h3>Corporate Tax Preparation</h3>
+                            <p>Stress-free tax filings combined with strategic planning to safeguard your company's bottom line.</p>
+                            <a href="services.html" class="btn-link-custom">Learn More &rarr;</a>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div class="service-card">
+                            <div class="service-icon">🚀</div>
+                            <h3>Fractional CFO Services</h3>
+                            <p>High-level financial guidance, budgeting, metrics tracking, and scaling roadmaps without the full-time executive cost.</p>
+                            <a href="services.html" class="btn-link-custom">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <!-- Footer Start -->
