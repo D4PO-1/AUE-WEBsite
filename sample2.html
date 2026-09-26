@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Anjous Uku Eweka & Co. | Chartered Accountants & Business Consultants</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Accounting, Audit, Tax Advisory, Financial Advisory, Corporate Secretarial Services, Anjous Uku Eweka & Co" name="keywords">
+        <meta content="Anjous Uku Eweka & Co. provides professional auditing, accounting, tax compliance, and business advisory services." name="description">
+
+        <!-- Favicons -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Nunito:400,600,700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="vendor/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Main Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            /* Video Background Styles */
+            .video-background-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                z-index: 1;
+            }
+
+            .bg-video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .video-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(10, 25, 47, 0.65); /* Deep professional dark tint */
+            }
+
+            .carousel-container {
+                position: relative;
+                z-index: 2;
+            }
+
+            /* Header Nav Layout & Left Logo Styling */
+            .header-nav-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .brand-logo-left-group {
+                display: flex;
+                align-items: center;
+            }
+
+            .company-brand-title {
+                margin: 0;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+            }
+
+            .company-brand-title a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            .logo-placeholder-container {
+                display: flex;
+                align-items: center;
+            }
+
+            .logo-placeholder {
+                max-height: 45px;
+                max-width: 160px;
+                border: 1px dashed rgba(255, 255, 255, 0.5);
+                padding: 4px 10px;
+                color: #ffffff;
+                font-size: 0.8rem;
+                display: inline-block;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Header Section Start -->
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header-nav-wrapper">
+                    
+                    <!-- Left-Aligned Brand Title and Logo Placeholder -->
+                    <div class="brand-logo-left-group pull-left">
+                        <div class="logo-placeholder-container mr-3">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="Anjous Uku Eweka & Co. Logo" class="logo-placeholder" onerror="this.style.display='none'; document.getElementById('logo-fallback-text').style.display='block';">
+                                <span id="logo-fallback-text" class="logo-placeholder" style="display:none;">[ Your Logo Here ]</span>
+                            </a>
+                        </div>
+                        <h1 class="company-brand-title"><a href="index.html">Anjous Uku Eweka & Co.</a></h1>
+                    </div>
+
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li class="menu-active"><a href="index.html">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+        <!-- Header Section End -->
+
+        <!-- Hero Section with Video Background Start -->
+        <section class="slider">
+            <div class="slider-container">
+                <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+                    <ol class="carousel-indicators"></ol>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <!-- Slide 1: Audit & Assurance (With Video Background) -->
+                        <div class="carousel-item active">
+                            <div class="video-background-container">
+                                <video autoplay muted loop playsinline poster="img/slider-1.jpg" class="bg-video">
+                                    <source src="video/hero-background.mp4" type="video/mp4">
+                                    <source src="video/hero-background.webm" type="video/webm">
+                                    Your browser does not support HTML5 video.
+                                </video>
+                                <div class="video-overlay"></div>
+                            </div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Audit & Assurance Services</h2>
+                                    <p>
+                                        Independent audit and reporting solutions designed to enhance reporting integrity, strengthen corporate governance, and ensure compliance with regulatory standards.
+                                    </p>
+                                    <a href="#services" class="btn-get-started">Explore Services</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: Tax Advisory & Planning -->
+                        <div class="carousel-item">
+                            <div class="carousel-background"><img src="img/slider-2.jpg" alt="Tax Advisory & Corporate Planning"></div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Tax Planning & Compliance</h2>
+                                    <p>
+                                        Strategic tax management, corporate filing, statutory compliance, and advisory services tailored to safeguard corporate profits and minimize liability.
+                                    </p>
+                                    <a href="#services" class="btn-get-started">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3: Financial Advisory -->
+                        <div class="carousel-item">
+                            <div class="carousel-background"><img src="img/slider-3.jpg" alt="Financial & Advisory Consultancy"></div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Financial & Management Consultancy</h2>
+                                    <p>
+                                        Actionable insight, cash flow restructuring, and valuation expertise aimed at guiding sustainable business growth and profitability.
+                                    </p>
+                                    <a href="#contact" class="btn-get-started">Schedule Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon ion-md-arrow-back" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon ion-md-arrow-forward" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- About Us Section Start -->
+        <section class="about" id="about">
+            <div class="container">
+                <header class="section-header">
+                    <h3>About Our Firm</h3>
+                    <p>
+                        Anjous Uku Eweka & Co. provides comprehensive accountancy, statutory auditing, tax strategy, and corporate financial advisory services to organizations across diverse business sectors.
+                    </p>
+                </header>
+
+                <div class="row align-items-center about-row">
+                    <div class="col-md-6">
+                        <img src="img/about.jpg" alt="Anjous Uku Eweka & Co. Office" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="title"><a href="#about">Excellence in Financial Integrity</a></h2>
+                        <p>
+                            At Anjous Uku Eweka & Co., we partner with small businesses, growing mid-sized enterprises, and established institutions. Our practice is built on a commitment to technical precision, thorough regulatory knowledge, and unyielding professional ethics.
+                        </p>
+                        <div class="read-more">
+                            <a href="#contact">Contact Our Partners</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row about-cols">
+                    <div class="col-md-4">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="img/about-mission.jpg" alt="Our Mission" class="img-fluid">
+                                <div class="icon"><i class="ion-ios-disc"></i></div>
+                            </div>
+                            <h2 class="title"><a href="#about">Our Mission</a></h2>
+                            <p>
+                                To deliver precise financial reporting, proactive tax solutions, and insightful business counsel that ensure compliance and long-term enterprise value.
+                            </p>
+                            <div class="read-more">
+                                <a href="#services">Our Capabilities</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="img/about-vision.jpg" alt="Our Vision" class="img-fluid">
+                                <div class="icon"><i class="ion-ios-eye"></i></div>
+                            </div>
+                            <h2 class="title"><a href="#about">Our Vision</a></h2>
+                            <p>
+                                To be a trusted professional accounting and advisory firm recognized for integrity, client commitment, and high-quality financial stewardship.
+                            </p>
+                            <div class="read-more">
+                                <a href="#services">Our Capabilities</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="img/about-objective.jpg" alt="Core Values" class="img-fluid">
+                                <div class="icon"><i class="ion-ios-options"></i></div>
+                            </div>
+                            <h2 class="title"><a href="#about">Core Values</a></h2>
+                            <p>
+                                Professional objectivity, strict adherence to statutory standards, absolute confidentiality, and diligent execution on every client engagement.
+                            </p>
+                            <div class="read-more">
+                                <a href="#services">Our Capabilities</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us Section End -->
+
+        <!-- Services Section Start -->
+        <section id="services" class="services">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Practice Areas</h3>
+                    <p>
+                        Tailored accounting, assurance, and financial consulting services tailored to your organizational goals.
+                    </p>
+                </header>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="single-service">
+                            <i class="ion-ios-calculator"></i>
+                            <h4><a href="#contact">Statutory Audit</a></h4>
+                            <p>Independent evaluation of financial statements ensuring compliance with GAAP/IFRS standards.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="single-service">
+                            <i class="ion-ios-paper"></i>
+                            <h4><a href="#contact">Tax Management</a></h4>
+                            <p>Corporate tax filing, VAT management, withholding tax compliance, and regulatory representation.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="single-service">
+                            <i class="ion-ios-cash"></i>
+                            <h4><a href="#contact">Bookkeeping & Payroll</a></h4>
+                            <p>Complete ledger management, payroll processing, statutory deductions, and periodic reconciliations.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="single-service">
+                            <i class="ion-ios-stats"></i>
+                            <h4><a href="#contact">Financial Advisory</a></h4>
+                            <p>Capital budgeting, cash flow forecasting, feasibility studies, and corporate restructuring advice.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section End -->
+
+        <!-- Call To Action Start -->
+        <section class="call-to-action">
+            <div class="container text-center">
+                <header class="section-header">
+                    <h3>Need Financial Guidance or an Independent Audit?</h3>
+                    <p>
+                        Connect with our team to discuss your accounting requirements, audit schedules, or tax strategy consultation.
+                    </p>
+                </header>
+                <a class="cta-btn" href="#contact">Request Consultation</a>
+            </div>
+        </section>
+        <!-- Call To Action End -->
+
+        <!-- Contact Section Start -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Contact Our Offices</h3>
+                    <p>
+                        Schedule an appointment or request an initial consultation with our managing partners.
+                    </p>
+                </div>
+
+                <div class="row contact-info">
+                    <div class="col-md-4">
+                        <div class="contact-address">
+                            <i class="ion-md-pin"></i>
+                            <h3>Office Address</h3>
+                            <address>Your Office Address, City, State, Country</address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-phone">
+                            <i class="ion-md-call"></i>
+                            <h3>Telephone</h3>
+                            <p><a href="tel:+1234567890">+123-456-7890</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-email">
+                            <i class="ion-md-mail"></i>
+                            <h3>Email Address</h3>
+                            <p><a href="mailto:info@anjousukueweka.com">info@anjousukueweka.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26361250.667320687!2d-113.75533773453304!3d36.24128894212527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1574923227698!5m2!1sen!2sbd" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form">
+                            <form action="#" method="post" class="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name / Company" required />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email" name="email" class="form-control" placeholder="Official Email" required />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Service Required (e.g. Audit, Tax Advisory)" required />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Brief description of your business needs" required></textarea>
+                                </div>
+                                <div><button type="submit">Submit Request</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-info">
+                            <h3>Anjous Uku Eweka & Co.</h3>
+                            <p>
+                                Chartered Accountants & Business Consultants offering audit, tax advisory, financial reporting, and payroll solutions.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Navigation</h4>
+                            <ul>
+                                <li><i class="ion-md-arrow-dropright"></i> <a href="index.html">Home</a></li>
+                                <li><i class="ion-md-arrow-dropright"></i> <a href="#about">About Us</a></li>
+                                <li><i class="ion-md-arrow-dropright"></i> <a href="#services">Our Services</a></li>
+                                <li><i class="ion-md-arrow-dropright"></i> <a href="#contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h4>Firm Contact</h4>
+                            <p>
+                                Office Address<br>
+                                City, State, Country<br>
+                                <strong>Phone:</strong> +123-456-7890<br>
+                                <strong>Email:</strong> info@anjousukueweka.com<br>
+                            </p>
+
+                            <div class="social-links">
+                                <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                <a href="#"><i class="ion-logo-twitter"></i></a>
+                                <a href="#"><i class="ion-logo-facebook"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-newsletter">
+                            <h4>Tax & Audit Insights</h4>
+                            <p>Subscribe to receive periodic regulatory updates, statutory tax deadline reminders, and financial insights.</p>
+                            <form action="#" method="post">
+                                <input type="email" name="email" required><input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong>Anjous Uku Eweka & Co.</strong> All Rights Reserved
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="ion-md-arrow-dropup"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery/jquery-migrate.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/easing/easing.min.js"></script>
+        <script src="vendor/superfish/hoverIntent.js"></script>
+        <script src="vendor/superfish/superfish.min.js"></script>
+        <script src="vendor/waypoints/waypoints.min.js"></script>
+        <script src="vendor/touchSwipe/jquery.touchSwipe.min.js"></script>
+        <script src="vendor/counterup/counterup.min.js"></script>
+        <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+        <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendor/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Main Javascript File -->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
