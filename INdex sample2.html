@@ -118,7 +118,82 @@
                 text-align: center;
             }
 
-            /* --- Problem-Solution & Services Framework Styles --- */
+            /* --- Borderless "Who Are We?" Section Styles --- */
+            .who-are-we-section {
+                padding: 90px 0;
+                background-color: #f9fafb;
+                border: none !important;
+            }
+
+            .who-are-we-header {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .who-are-we-header h2 {
+                font-size: 2rem;
+                font-weight: 700;
+                color: #2d3748;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+            }
+
+            .who-are-we-divider {
+                width: 70px;
+                border-top: 2px dashed #4a5568;
+                margin: 0 auto 20px auto;
+            }
+
+            .who-are-we-header p {
+                font-size: 1.05rem;
+                color: #718096;
+                max-width: 750px;
+                margin: 0 auto;
+                line-height: 1.6;
+            }
+
+            .who-are-we-content {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                border: none !important;
+            }
+
+            .who-are-we-image-col {
+                flex: 1;
+                border: none !important;
+            }
+
+            .who-are-we-img {
+                width: 100%;
+                height: 380px;
+                object-fit: cover;
+                border-radius: 4px;
+                border: none !important;
+                box-shadow: none !important;
+            }
+
+            .who-are-we-text-col {
+                flex: 1;
+                border: none !important;
+            }
+
+            .who-are-we-text-col h3 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: #1a202c;
+                margin-bottom: 20px;
+            }
+
+            .who-are-we-text-col p {
+                font-size: 1.02rem;
+                color: #4a5568;
+                line-height: 1.8;
+                margin-bottom: 20px;
+            }
+
+            /* --- Problem-Solution Framework Styles --- */
             .section-header-custom {
                 text-align: center;
                 max-width: 700px;
@@ -156,6 +231,21 @@
                 border: 1px solid #e2e8f0;
                 border-radius: 12px;
                 overflow: hidden;
+                opacity: 0;
+                transform: translateY(40px);
+                transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                            opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                            box-shadow 0.3s ease;
+            }
+
+            .framework-card.animate-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .framework-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
             }
 
             .problem-box {
@@ -201,58 +291,157 @@
                 font-size: 0.95rem;
             }
 
-            .services-section {
-                padding: 80px 0;
-                background-color: #f7fafc;
+            /* --- "Looking for a Professional Accountant?" CTA Section --- */
+            .cta-accountant-section {
+                padding: 90px 0;
+                background: linear-gradient(
+                        135deg, 
+                        rgba(6, 78, 59, 0.88) 0%, 
+                        rgba(4, 120, 87, 0.88) 100%
+                    ), 
+                    url('img/footer-1.jpg') center/cover no-repeat;
+                color: #ffffff;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
             }
 
-            .services-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 30px;
+            .cta-accountant-section::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 200%;
+                height: 200%;
+                background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 60%);
+                pointer-events: none;
             }
 
-            .service-card {
-                background: #ffffff;
-                padding: 40px;
-                border-radius: 12px;
-                border: 1px solid #e2e8f0;
-                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            .cta-content {
+                max-width: 800px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 2;
             }
 
-            .service-card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-                border-color: #cbd5e0;
-            }
-
-            .service-icon {
+            .cta-content h2 {
                 font-size: 2.5rem;
+                font-weight: 700;
+                color: #ffffff;
                 margin-bottom: 20px;
             }
 
-            .service-card h3 {
-                font-size: 1.35rem;
-                color: #1a202c;
-                margin-bottom: 15px;
+            .cta-content p {
+                font-size: 1.2rem;
+                color: #a7f3d0;
+                margin-bottom: 35px;
+                line-height: 1.7;
             }
 
-            .service-card p {
-                color: #4a5568;
-                margin-bottom: 25px;
-                font-size: 0.95rem;
+            .cta-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
             }
 
-            .btn-link-custom {
-                color: #2b6cb0;
-                text-decoration: none;
+            .btn-cta-primary {
+                background-color: #10b981;
+                color: #ffffff;
+                padding: 14px 32px;
+                border-radius: 6px;
                 font-weight: 600;
-                font-size: 0.95rem;
-                transition: color 0.15s ease;
+                font-size: 1rem;
+                text-decoration: none;
+                transition: all 0.25s ease;
+                box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
             }
 
-            .btn-link-custom:hover {
-                color: #1a4373;
+            .btn-cta-primary:hover {
+                background-color: #059669;
+                color: #ffffff;
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+            }
+
+            .btn-cta-secondary {
+                background-color: transparent;
+                color: #ffffff;
+                padding: 14px 32px;
+                border-radius: 6px;
+                font-weight: 600;
+                font-size: 1rem;
+                border: 2px solid rgba(255, 255, 255, 0.5);
+                text-decoration: none;
+                transition: all 0.25s ease;
+            }
+
+            .btn-cta-secondary:hover {
+                border-color: #ffffff;
+                background-color: rgba(255, 255, 255, 0.15);
+                color: #ffffff;
+                transform: translateY(-2px);
+            }
+
+            /* --- Custom Borderless Multi-Office Footer Layout & Styling --- */
+            .footer-offices-title {
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 8px;
+                letter-spacing: 0.5px;
+                color: #ffffff;
+            }
+
+            .footer-offices-divider {
+                width: 60px;
+                border-top: 2px dashed rgba(255, 255, 255, 0.5);
+                margin-bottom: 25px;
+            }
+
+            /* Completely Borderless Card Container */
+            .office-card {
+                background: transparent !important;
+                border: none !important;
+                box-shadow: none !important;
+                padding: 0;
+                height: 100%;
+                font-size: 0.88rem;
+                line-height: 1.6;
+                color: #cbd5e0;
+            }
+
+            .office-card h5 {
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 700;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .office-card .head-tag {
+                background-color: #10b981;
+                color: #ffffff;
+                font-size: 0.68rem;
+                padding: 2px 6px;
+                border-radius: 3px;
+                margin-left: 6px;
+                vertical-align: middle;
+                font-weight: 600;
+                text-transform: none;
+            }
+
+            .office-card p {
+                margin-bottom: 8px;
+            }
+
+            .office-card a {
+                color: #a7f3d0;
+                text-decoration: none;
+            }
+
+            .office-card a:hover {
+                text-decoration: underline;
             }
 
             /* Responsive Adjustments for Mobile Devices */
@@ -286,6 +475,15 @@
                     font-size: 0.85rem !important;
                 }
 
+                .who-are-we-content {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+
+                .who-are-we-img {
+                    height: 260px;
+                }
+
                 .framework-card {
                     grid-template-columns: 1fr;
                 }
@@ -296,8 +494,17 @@
                 }
 
                 .problem-solution-section,
-                .services-section {
+                .cta-accountant-section,
+                .who-are-we-section {
                     padding: 60px 0;
+                }
+
+                .cta-content h2 {
+                    font-size: 1.8rem;
+                }
+
+                .cta-content p {
+                    font-size: 1rem;
                 }
             }
 
@@ -308,6 +515,10 @@
                 
                 .brand-logo-left-group {
                     gap: 8px;
+                }
+
+                .cta-buttons {
+                    flex-direction: column;
                 }
             }
         </style>
@@ -330,7 +541,7 @@
                         <h1 class="company-brand-title"><a href="index.html">Anjous Uku Eweka & Co.</a></h1>
                     </div>
 
-                    <!-- Navigation Links to Separate HTML Pages -->
+                    <!-- Navigation Links -->
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
                             <li class="menu-active"><a href="index.html">Home</a></li>
@@ -354,7 +565,7 @@
 
                     <div class="carousel-inner" role="listbox">
 
-                        <!-- Slide 1: Audit & Assurance (With Video Background) -->
+                        <!-- Slide 1: Audit & Assurance -->
                         <div class="carousel-item active">
                             <div class="video-background-container">
                                 <video autoplay muted loop playsinline poster="img/slider-1.jpg" class="bg-video">
@@ -429,7 +640,37 @@
         <!-- Main Content Area -->
         <main id="main">
 
-            <!-- 1. PROBLEM-SOLUTION FRAMEWORK SECTION -->
+            <!-- 1. BORDERLESS "WHO ARE WE?" SECTION -->
+            <section class="who-are-we-section">
+                <div class="container">
+                    <div class="who-are-we-header">
+                        <h2>WHO ARE WE?</h2>
+                        <div class="who-are-we-divider"></div>
+                        <p>Delivering financial clarity, corporate compliance, and advisory expertise with roots anchored in integrity and excellence.</p>
+                    </div>
+
+                    <div class="who-are-we-content">
+                        <!-- Left Column: Linked Image -->
+                        <div class="who-are-we-image-col">
+                            <img src="img/who-are-we.jpg" alt="Anjous Uku Eweka & Co. Office" class="who-are-we-img">
+                        </div>
+
+                        <!-- Right Column: Firm Overview Text -->
+                        <div class="who-are-we-text-col">
+                            <h3>Rooted in Heritage, Committed to Growth</h3>
+                            <p>
+                                Anjous, Uku, Eweka & Co. is a multi-disciplinary firm of consultants and management experts, established over 51 years in Nigeria with offices in Benin, Warri, Port Harcourt, Lagos and Abuja we work with companies and organisations with foot prints in the public and private sectors of the economy.
+                            </p>
+                            <p>
+                                Our experience and pedigree make us the ideal choice for your accounting and audit needs and we remain committed to the provision of quality and excellent services to our existing and prospective clients.
+                            </p>
+                            <a href="about.html" class="btn-cta-primary" style="display: inline-block; margin-top: 10px;">Learn More About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. ANIMATED PROBLEM-SOLUTION FRAMEWORK SECTION -->
             <section class="problem-solution-section">
                 <div class="container">
                     <div class="section-header-custom">
@@ -483,37 +724,17 @@
                 </div>
             </section>
 
-            <!-- 2. CORE SERVICES GRID SECTION -->
-            <section class="services-section">
+            <!-- 3. "LOOKING FOR A PROFESSIONAL ACCOUNTANT?" CTA SECTION -->
+            <section class="cta-accountant-section">
                 <div class="container">
-                    <div class="section-header-custom">
-                        <h2>Our Core Services</h2>
-                        <p>Tailored financial management designed to protect your profits and streamline workflows.</p>
-                    </div>
-
-                    <div class="services-grid">
-                        <!-- Service 1 -->
-                        <div class="service-card">
-                            <div class="service-icon">📊</div>
-                            <h3>Full-Service Bookkeeping</h3>
-                            <p>Clean, accurate books kept up-to-date weekly using secure cloud platforms like QuickBooks and Xero.</p>
-                            <a href="services.html" class="btn-link-custom">Learn More &rarr;</a>
-                        </div>
-
-                        <!-- Service 2 -->
-                        <div class="service-card">
-                            <div class="service-icon">💼</div>
-                            <h3>Corporate Tax Preparation</h3>
-                            <p>Stress-free tax filings combined with strategic planning to safeguard your company's bottom line.</p>
-                            <a href="services.html" class="btn-link-custom">Learn More &rarr;</a>
-                        </div>
-
-                        <!-- Service 3 -->
-                        <div class="service-card">
-                            <div class="service-icon">🚀</div>
-                            <h3>Fractional CFO Services</h3>
-                            <p>High-level financial guidance, budgeting, metrics tracking, and scaling roadmaps without the full-time executive cost.</p>
-                            <a href="services.html" class="btn-link-custom">Learn More &rarr;</a>
+                    <div class="cta-content">
+                        <h2>Looking for a Professional Accountant?</h2>
+                        <p>
+                            Whether you need complete regulatory compliance, forensic auditing, or dedicated financial oversight, our chartered team is ready to safeguard and grow your financial health.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="contact.html" class="btn-cta-primary">Book a Free Consultation</a>
+                            <a href="services.html" class="btn-cta-secondary">Explore All Services</a>
                         </div>
                     </div>
                 </div>
@@ -523,46 +744,69 @@
 
         <!-- Footer Start -->
         <footer class="footer">
-            <div class="footer-top">
+            <div class="footer-top" style="padding: 60px 0 40px 0;">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 footer-info mb-4 mb-md-0">
-                            <h3>Anjous Uku Eweka & Co.</h3>
-                            <p>
-                                Chartered Accountants & Business Consultants offering audit, tax advisory, financial reporting, and payroll solutions.
-                            </p>
+
+                    <!-- Header Row: Title & Social Links -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-8">
+                            <h4 class="footer-offices-title">Our Office Locations</h4>
+                            <div class="footer-offices-divider"></div>
                         </div>
-
-                        <div class="col-lg-4 col-md-6 footer-contact mb-4 mb-md-0">
-                            <h4>Firm Contact</h4>
-                            <p>
-                                Office Address<br>
-                                City, State, Country<br>
-                                <strong>Phone:</strong> +123-456-7890<br>
-                                <strong>Email:</strong> info@anjousukueweka.com<br>
-                            </p>
-
-                            <div class="social-links">
+                        <div class="col-md-4 text-md-right mb-3 mb-md-0">
+                            <div class="social-links d-inline-flex gap-2">
                                 <a href="#"><i class="ion-logo-linkedin"></i></a>
-                                <a href="#"><i class="ion-logo-twitter"></i></a>
-                                <a href="#"><i class="ion-logo-facebook"></i></a>
+                                <a href="#"><i class="ion-logo-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Borderless Office Locations Grid -->
+                    <div class="row g-3">
+                        
+                        <!-- Benin (Head Office) -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Benin <span class="head-tag">Head Office</span></h5>
+                                <p>5, Hudson Lane,<br>Off Akpakpava Street,<br>P.O. Box 420.</p>
+                                <strong>Phone:</strong> <a href="tel:08036666837">08036666837</a>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-12 footer-newsletter">
-                            <h4>Tax & Audit Insights</h4>
-                            <p>Subscribe to receive periodic regulatory updates, statutory tax deadline reminders, and financial insights.</p>
-                            <form action="#" method="post">
-                                <input type="email" name="email" required><input type="submit" value="Subscribe">
-                            </form>
+                        <!-- Lagos Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Lagos</h5>
+                                <p>68, Shyllon Street,<br>Off Ikorodu Road,<br>Palm Grove.</p>
+                                <strong>Phone:</strong> <a href="tel:08165304735">08165304735</a>
+                            </div>
+                        </div>
+
+                        <!-- Port Harcourt Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Port Harcourt</h5>
+                                <p>3, Worukwo Street,<br>Off Olu Obasanjo Way.</p>
+                                <strong>Phone:</strong> <a href="tel:08035430664">08035430664</a>
+                            </div>
+                        </div>
+
+                        <!-- Warri Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Warri</h5>
+                                <p>31, Warri/Effurun Road,<br>P.O. Box 541.</p>
+                                <strong>Phone:</strong> <a href="tel:08035430664">08035430664</a>
+                            </div>
                         </div>
 
                     </div>
+
                 </div>
             </div>
 
             <div class="container">
-                <div class="copyright text-center">
+                <div class="copyright text-center py-3">
                     &copy; Copyright <strong>Anjous Uku Eweka & Co.</strong> All Rights Reserved
                 </div>
             </div>
@@ -587,6 +831,31 @@
 
         <!-- Main Javascript File -->
         <script src="js/main.js"></script>
+
+        <!-- Intersection Observer Script for Float-in Animation -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.15
+                };
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach((entry, index) => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                entry.target.classList.add('animate-in');
+                            }, index * 150);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                const cards = document.querySelectorAll('.framework-card');
+                cards.forEach(card => observer.observe(card));
+            });
+        </script>
 
     </body>
 </html>
