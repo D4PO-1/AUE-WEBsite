@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Our Services | Anjous, Uku, Eweka & Co. (Chartered Accountants)</title>
+        <title>Insights & Blog | Anjous, Uku, Eweka & Co. (Chartered Accountants)</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Statutory Audit, Management Audit, Taxation Consultancy, Mergers and Acquisitions, Receivership and Liquidations, Management Consultancy" name="keywords">
-        <meta content="Comprehensive statutory audit, taxation, investigation, and management consultancy services by Anjous, Uku, Eweka & Co." name="description">
+        <meta content="VAIDS Nigeria, Tax Compliance, Financial Insights, Accounting Blog, Public Sector Taxation" name="keywords">
+        <meta content="Stay updated with current regulatory insights, taxation updates, and financial perspectives from Anjous, Uku, Eweka & Co." name="description">
 
         <!-- Favicons -->
         <link href="img/favicon.ico" rel="icon">
@@ -25,7 +25,7 @@
         <!-- Main Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
 
-        <!-- Header, Footer, and Service Page Styles -->
+        <!-- Header, Footer, and Blog Page Styles -->
         <style>
             /* Header Nav Layout & Responsive Branding Styling */
             .header-nav-wrapper {
@@ -72,12 +72,12 @@
                 text-align: center;
             }
 
-            /* Borderless & Clean Design Styles with Image Placeholders */
-            .services {
+            /* Borderless & Clean Blog Card Layout */
+            .insights-blog {
                 background-color: #f9fbfd;
                 padding: 60px 0;
             }
-            .single-service {
+            .blog-card {
                 border: none !important;
                 outline: none !important;
                 box-shadow: none !important;
@@ -86,10 +86,10 @@
                 margin-bottom: 40px;
                 transition: transform 0.3s ease;
             }
-            .single-service:hover {
+            .blog-card:hover {
                 transform: translateY(-4px);
             }
-            .service-img-wrapper {
+            .blog-img-wrapper {
                 width: 100%;
                 height: 220px;
                 overflow: hidden;
@@ -97,29 +97,52 @@
                 margin-bottom: 20px;
                 background-color: #e2e8f0;
             }
-            .service-img-wrapper img {
+            .blog-img-wrapper img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 display: block;
             }
-            .single-service h4 {
+            .blog-meta {
+                font-size: 0.82rem;
+                color: #10b981;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-bottom: 8px;
+            }
+            .blog-card h4 {
                 font-weight: 700;
-                font-size: 1.25rem;
+                font-size: 1.2rem;
                 color: #0A2540;
+                margin-bottom: 12px;
+                line-height: 1.4;
+            }
+            .blog-card p {
+                color: #526484;
+                font-size: 0.92rem;
+                line-height: 1.6;
                 margin-bottom: 15px;
             }
-            .single-service p, .single-service ul {
-                color: #526484;
-                font-size: 0.93rem;
-                line-height: 1.7;
+            .blog-card blockquote {
+                font-style: italic;
+                color: #4a5568;
+                border-left: 3px solid #10b981;
+                padding-left: 12px;
+                margin: 10px 0;
             }
-            .single-service ul {
-                padding-left: 18px;
-                margin-bottom: 0;
+            .blog-read-more {
+                color: #0A2540;
+                font-weight: 700;
+                font-size: 0.88rem;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                gap: 5px;
             }
-            .single-service ul li {
-                margin-bottom: 6px;
+            .blog-read-more:hover {
+                color: #10b981;
+                text-decoration: underline;
             }
             .section-header h3 {
                 color: #0A2540;
@@ -244,10 +267,14 @@
                         <ul class="nav-menu">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
-                            <li class="menu-active"><a href="services.html">Services</a></li>
-                            <li><a href="affiliates.html">Affiliates</a></li>
-                            <li><a href="clients.html">Clients</a></li>
-                            <li><a href="insights.html">Insights</a></li>
+                            <li class="menu-has-children"><a href="#">Our Work <i class="ion-md-arrow-dropdown dicon"></i></a>
+                                <ul>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="affiliates.html">Affiliates</a></li>
+                                    <li><a href="clients.html">Clients</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-active"><a href="insights.html">Insights</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </nav>
@@ -264,7 +291,7 @@
                     <div class="banner-nav">
                         <div class="banner-box">
                             <a href="index.html">Home </a>
-                            <a href="services.html">Services</a>
+                            <a href="insights.html">Insights</a>
                         </div>
                     </div>
                 </div>
@@ -272,145 +299,220 @@
         </section>
         <!-- Banner Section End-->
 
-        <!-- Services Section Start -->
-        <section id="services" class="services">
+        <!-- Blog & Insights Section Start -->
+        <section id="insights" class="insights-blog">
             <div class="container">
                 <header class="section-header text-center">
-                    <h3>Our Professional Practice Areas</h3>
+                    <h3>Blog & Insights</h3>
                     <p>
-                        Anjous, Uku, Eweka & Co. (Chartered Accountants) renders high-level statutory, financial, tax, and managerial advisory services tailored to public and corporate institutions.
+                        Stay informed with regulatory announcements, tax advisories, and industry insights curated by the professional team at Anjous, Uku, Eweka & Co.
                     </p>
                 </header>
+                
                 <div class="row">
 
-                    <!-- Statutory Audit -->
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single-service">
-                            <div class="service-img-wrapper">
-                                <img src="img/Placeholder.jpg" alt="Statutory Audit">
+                    <!-- Blog Entry 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="VAIDs Foreign Assets Exposure">
                             </div>
-                            <h4>STATUTORY AUDIT</h4>
+                            <div class="blog-meta">Posted on April 22, 2018</div>
+                            <h4>If you bought assets abroad with money made in Nigeria but paid no tax, VAIDs will expose you — Subair, LIRS boss</h4>
                             <p>
-                                Our firm gives audit opinions on the financial statements of companies, government corporations, and parastatal organizations in accordance with the Companies and Allied Matters Act and other enabling Enactments.
+                                Tax authorities emphasize foreign asset reporting compliance under the Voluntary Assets and Income Declaration Scheme framework.
                             </p>
-                            <p>
-                                In the course of our statutory audit, Anjous, Uku, Eweka & Co. understudies the organizational, financial, and operational controls of our clients, highlights any weaknesses that come to our notice, and makes actionable recommendations to improve performance and Return on Investment (ROI).
-                            </p>
+                            <a href="https://www.vanguardngr.com/2018/03/bought-assets-abroad-money-made-nigeria-paid-no-tax-vaids-will-expose-subair-lirs-boss/" target="_blank" class="blog-read-more">
+                                Read more <i class="ion-md-arrow-forward"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <!-- Management Audit -->
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single-service">
-                            <div class="service-img-wrapper">
-                                <img src="img/Placeholder.jpg" alt="Management Audit">
+                    <!-- Blog Entry 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Buhari Extends VAIDS Deadline">
                             </div>
-                            <h4>MANAGEMENT AUDIT</h4>
+                            <div class="blog-meta">Posted on April 22, 2018</div>
+                            <h4>Buhari extends VAIDS deadline to June 30</h4>
                             <p>
-                                We carry out operational and value-for-money audits by reviewing policy performance and management systems to ensure economy and efficiency. We assist clients in ascertaining whether shareholder directives are being implemented and whether the company is effectively run without short-term biases compromising long-term success.
+                                President Muhammadu Buhari approved the extension of the Voluntary Assets and Income Declaration Scheme to June 30, 2018, following appeals from professional bodies and individual taxpayers.
                             </p>
-                            <p>
-                                At the conclusion of the audit, we report directly to Shareholders or the Audit Committee with targeted performance adjustments. Anjous, Uku, Eweka & Co. has extensive experience undertaking Management Audits on Joint Venture projects involving Foreign Finance.
-                            </p>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
                         </div>
                     </div>
 
-                    <!-- Investigations -->
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single-service">
-                            <div class="service-img-wrapper">
-                                <img src="img/Placeholder.jpg" alt="Investigation Services">
+                    <!-- Blog Entry 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="The 51 year Journey">
                             </div>
-                            <h4>INVESTIGATION</h4>
-                            <p>We undertake specialized inquiries and independent reporting for tailored financial scenarios, including:</p>
-                            <ul>
-                                <li><strong>Prospectus Reports:</strong> Expressing independent reporting accountant opinions on prospectus financial statements for public share/debenture offerings.</li>
-                                <li><strong>Profits Forecast:</strong> Expressing professional opinions on profit forecasts during share issues, takeovers, or mergers.</li>
-                                <li>Acquisition of Companies & Purchase of Business.</li>
-                                <li>Prospective Lending and Investment Evaluation.</li>
-                                <li>Partnership Arrangements & Forensic Fraud Inquiries.</li>
-                            </ul>
+                            <div class="blog-meta">Posted on April 19, 2018</div>
+                            <h4>The 51 year Journey</h4>
+                            <p>Thanks for joining me on this milestone reflection!</p>
+                            <blockquote>
+                                "Good company in a journey makes the way seem shorter." — Izaak Walton
+                            </blockquote>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
                         </div>
                     </div>
 
-                    <!-- Mergers and Acquisitions -->
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single-service">
-                            <div class="service-img-wrapper">
-                                <img src="img/Placeholder.jpg" alt="Mergers and Acquisitions">
+                    <!-- Placeholder Blog Entry 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Understanding Corporate Tax Planning">
                             </div>
-                            <h4>MERGERS AND ACQUISITIONS</h4>
+                            <div class="blog-meta">Posted on May 10, 2018</div>
+                            <h4>Understanding Corporate Tax Planning for SMEs in Nigeria</h4>
                             <p>
-                                Anjous, Uku, Eweka & Co. assists corporate entities across all accounting and financial aspects of Mergers and Acquisitions. We provide continuous evaluation reports and valuation metrics to ensure intended operational and financial synergies are fully realized.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                             </p>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
                         </div>
                     </div>
 
-                    <!-- Taxation Consultancy -->
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single-service">
-                            <div class="service-img-wrapper">
-                                <img src="img/Placeholder.jpg" alt="Taxation Consultancy">
+                    <!-- Placeholder Blog Entry 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Navigating Public Sector Audits">
                             </div>
-                            <h4>TAXATION CONSULTANCY</h4>
+                            <div class="blog-meta">Posted on June 15, 2018</div>
+                            <h4>Navigating Public Sector Audits and Regulatory Compliance</h4>
                             <p>
-                                We act as lead advisors on comprehensive taxation matters covering corporate and individual tax affairs. Our core tax solutions include tax computations, statutory filing of returns with Federal and State Revenue Authorities, and obtaining Tax Clearance Certificates (TCC).
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
                             </p>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
                         </div>
                     </div>
 
-                    <!-- Receivership and Liquidations -->
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single-service">
-                            <div class="service-img-wrapper">
-                                <img src="img/Placeholder.jpg" alt="Receivership and Liquidations">
+                    <!-- Placeholder Blog Entry 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Financial Valuation Methods">
                             </div>
-                            <h4>RECEIVERSHIP AND LIQUIDATIONS</h4>
+                            <div class="blog-meta">Posted on July 02, 2018</div>
+                            <h4>Key Financial Valuation Methods in Mergers & Acquisitions</h4>
                             <p>
-                                Anjous, Uku, Eweka & Co. acts as Receivers and Managers regarding the dissolution of Corporate and Non-Corporate bodies under Voluntary or Compulsory winding up in strict accordance with the Companies and Allied Matters Act and other enabling enactments.
+                                Curabitur pretium tiddunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin.
                             </p>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
                         </div>
                     </div>
 
-                    <!-- Management Consultancy -->
-                    <div class="col-lg-12">
-                        <div class="single-service">
-                            <div class="service-img-wrapper" style="height: 280px;">
-                                <img src="img/Placeholder.jpg" alt="Management Consultancy">
+                    <!-- Placeholder Blog Entry 7 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Internal Audit Systems">
                             </div>
-                            <h4>MANAGEMENT CONSULTANCY</h4>
-                            <p>Anjous, Uku, Eweka & Co. provides end-to-end specialized management consulting across the following capabilities:</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li>Designing and Installation of Accounting Systems</li>
-                                        <li>Company Secretaryship Services</li>
-                                        <li>Business Permit & Expatriate Quota Advisory</li>
-                                        <li>Technical Service Contracts & Agency Arrangements</li>
-                                        <li>Human Resources Management – Recruitment & Development</li>
-                                        <li>Incorporation of Limited & Unlimited Liability Companies</li>
-                                        <li>Cash Flow Projections, Planning, and Control Systems</li>
-                                        <li>Feasibility Studies & Business Plan Development</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li>Business Environment Information & Strategic Intelligence</li>
-                                        <li>Industry Cameos and Performance Comparisons</li>
-                                        <li>Data Processing & Computerization of Accounting Systems</li>
-                                        <li>Management Accounts & Information Systems (MIS) Design</li>
-                                        <li>Budgeting & Budgetary Control Systems</li>
-                                        <li>Cost Management & Financial Architecture Design</li>
-                                    </ul>
-                                </div>
+                            <div class="blog-meta">Posted on August 18, 2018</div>
+                            <h4>Strengthening Internal Audit Controls Against Corporate Risk</h4>
+                            <p>
+                                Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+                            </p>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Blog Entry 8 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Statutory Filing Deadlines">
                             </div>
+                            <div class="blog-meta">Posted on September 24, 2018</div>
+                            <h4>Essential Statutory Filing Deadlines Every Business Owner Should Know</h4>
+                            <p>
+                                Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            </p>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Blog Entry 9 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Management Consulting Trends">
+                            </div>
+                            <div class="blog-meta">Posted on October 12, 2018</div>
+                            <h4>Management Advisory Strategies for Operational Efficiency</h4>
+                            <p>
+                                Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora.
+                            </p>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Blog Entry 10 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Forensic Accounting Practices">
+                            </div>
+                            <div class="blog-meta">Posted on November 05, 2018</div>
+                            <h4>The Role of Forensic Accounting in Corporate Fraud Investigations</h4>
+                            <p>
+                                Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi.
+                            </p>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Blog Entry 11 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Tax Clearances and Certificates">
+                            </div>
+                            <div class="blog-meta">Posted on December 01, 2018</div>
+                            <h4>How to Obtain Tax Clearance Certificates Without Operational Delays</h4>
+                            <p>
+                                Cras sagittis. Praesent ac sem eget est egestas volutpat. Vivamus fermentum semper porta. Nunc quis orci eget orci imperdiet egestas.
+                            </p>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Blog Entry 12 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Joint Venture Audit Insights">
+                            </div>
+                            <div class="blog-meta">Posted on January 14, 2019</div>
+                            <h4>Joint Venture Auditing and Financial Oversight in Modern Practice</h4>
+                            <p>
+                                Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            </p>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Blog Entry 13 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Capital Restructuring Strategies">
+                            </div>
+                            <div class="blog-meta">Posted on February 20, 2019</div>
+                            <h4>Capital Restructuring and Solvency Management for Growing Enterprises</h4>
+                            <p>
+                                Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna.
+                            </p>
+                            <a href="#" class="blog-read-more">Read more <i class="ion-md-arrow-forward"></i></a>
                         </div>
                     </div>
 
                 </div>
             </div>
         </section>
-        <!-- Services Section End -->
+        <!-- Blog & Insights Section End -->
 
         <!-- Footer Start -->
         <footer class="footer">

@@ -2,17 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>GO GREEN | HTML Business Template</title>
+        <title>Contact Us | Anjous, Uku, Eweka & Co. (Chartered Accountants)</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <meta content="Statutory Audit, Management Audit, Taxation Consultancy, Mergers and Acquisitions, Receivership and Liquidations, Management Consultancy" name="keywords">
+        <meta content="Contact Anjous, Uku, Eweka & Co. for statutory audit, taxation, investigation, and management consultancy services." name="description">
 
         <!-- Favicons -->
         <link href="img/favicon.ico" rel="icon">
         <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300|Nunito:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Nunito:400,600,700&display=swap" rel="stylesheet">
 
         <!-- Bootstrap CSS File -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,36 +24,180 @@
 
         <!-- Main Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <!-- Header, Footer, and Custom Styles -->
+        <style>
+            /* Header Nav Layout & Responsive Branding Styling */
+            .header-nav-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .brand-logo-left-group {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .company-brand-title {
+                margin: 0;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                font-size: 1.5rem;
+                line-height: 1.2;
+            }
+
+            .company-brand-title a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            .logo-placeholder-container {
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+            }
+
+            .logo-placeholder {
+                max-height: 45px;
+                max-width: 140px;
+                border: 1px dashed rgba(255, 255, 255, 0.5);
+                padding: 4px 8px;
+                color: #ffffff;
+                font-size: 0.75rem;
+                display: inline-block;
+                text-align: center;
+            }
+
+            /* Custom Borderless Multi-Office Footer Layout & Styling */
+            .footer-offices-title {
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 8px;
+                letter-spacing: 0.5px;
+                color: #ffffff;
+            }
+
+            .footer-offices-divider {
+                width: 60px;
+                border-top: 2px dashed rgba(255, 255, 255, 0.5);
+                margin-bottom: 25px;
+            }
+
+            .office-card {
+                background: transparent !important;
+                border: none !important;
+                box-shadow: none !important;
+                padding: 0;
+                height: 100%;
+                font-size: 0.88rem;
+                line-height: 1.6;
+                color: #cbd5e0;
+            }
+
+            .office-card h5 {
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 700;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .office-card .head-tag {
+                background-color: #10b981;
+                color: #ffffff;
+                font-size: 0.68rem;
+                padding: 2px 6px;
+                border-radius: 3px;
+                margin-left: 6px;
+                vertical-align: middle;
+                font-weight: 600;
+                text-transform: none;
+            }
+
+            .office-card p {
+                margin-bottom: 8px;
+            }
+
+            .office-card a {
+                color: #a7f3d0;
+                text-decoration: none;
+            }
+
+            .office-card a:hover {
+                text-decoration: underline;
+            }
+
+            /* Responsive Adjustments for Mobile Devices */
+            @media (max-width: 768px) {
+                .header-nav-wrapper {
+                    justify-content: space-between;
+                    padding: 5px 0;
+                }
+
+                .company-brand-title {
+                    font-size: 1.1rem;
+                }
+
+                .logo-placeholder {
+                    max-height: 35px;
+                    max-width: 100px;
+                    font-size: 0.65rem;
+                    padding: 2px 4px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .company-brand-title {
+                    font-size: 0.95rem;
+                }
+                
+                .brand-logo-left-group {
+                    gap: 8px;
+                }
+            }
+        </style>
     </head>
 
     <body>
         <!-- Header Section Start -->
         <header class="header">
             <div class="container-fluid">
-                <div class="logo pull-left">
-                    <h1><a href="index.html">GO GREEN</a></h1>
-                    <!-- <a href="#"><img src="img/logo.png" alt="" title="" /></a>-->
-                </div>
+                <div class="header-nav-wrapper">
+                    
+                    <!-- Left-Aligned Brand Title and Logo Placeholder -->
+                    <div class="brand-logo-left-group pull-left">
+                        <div class="logo-placeholder-container">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="Anjous Uku Eweka & Co. Logo" class="logo-placeholder" onerror="this.style.display='none'; document.getElementById('logo-fallback-text').style.display='block';">
+                                <span id="logo-fallback-text" class="logo-placeholder" style="display:none;">[ Logo ]</span>
+                            </a>
+                        </div>
+                        <h1 class="company-brand-title"><a href="index.html">Anjous Uku Eweka & Co.</a></h1>
+                    </div>
 
-                <nav id="nav-menu-container">
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="price.html">Price</a></li>
-                        <li class="menu-has-children"><a href="#">Dropdown <i class="dicon ion-md-arrow-dropdown"></i></a>
-                            <ul>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-active"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+                    <!-- Navigation Links -->
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li class="menu-has-children"><a href="#">Our Work <i class="ion-md-arrow-dropdown dicon"></i></a>
+                                <ul>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="affiliates.html">Affiliates</a></li>
+                                    <li><a href="clients.html">Clients</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="insights.html">Insights</a></li>
+                            <li class="menu-active"><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
             </div>
         </header>
         <!-- Header Section End -->
@@ -65,7 +209,7 @@
                     <div class="banner-nav">
                         <div class="banner-box">
                             <a href="index.html">Home </a>
-                            <a href="contact.html">Contact</a>
+                            <a href="contact.html">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -79,7 +223,7 @@
                 <div class="section-header">
                     <h3 class="section-title">Contact Us</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra ligula nec hendrerit. Ut eu libero nec magna placerat fringilla.
+                        Get in touch with Anjous, Uku, Eweka & Co. for statutory audit, financial advisory, and taxation consultancy services.
                     </p>
                 </div>
 
@@ -87,8 +231,8 @@
                     <div class="col-md-4">
                         <div class="contact-address">
                             <i class="ion-md-pin"></i>
-                            <h3>Address</h3>
-                            <address>Your Location, City, Country</address>
+                            <h3>Head Office</h3>
+                            <address>5, Hudson Lane, Off Akpakpava Street, Benin City</address>
                         </div>
                     </div>
 
@@ -96,7 +240,7 @@
                         <div class="contact-phone">
                             <i class="ion-md-call"></i>
                             <h3>Phone Number</h3>
-                            <p><a href="tel:+123-456-789">+123-456-789</a></p>
+                            <p><a href="tel:08036666837">08036666837</a></p>
                         </div>
                     </div>
 
@@ -104,7 +248,7 @@
                         <div class="contact-email">
                             <i class="ion-md-mail"></i>
                             <h3>Email</h3>
-                            <p><a href="mailto:info@example.com">info@example.com</a></p>
+                            <p><a href="mailto:info@anjousukueweka.com">info@anjousukueweka.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -143,63 +287,70 @@
 
         <!-- Footer Start -->
         <footer class="footer">
-            <div class="footer-top">
+            <div class="footer-top" style="padding: 60px 0 40px 0;">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 footer-info">
-                            <h3>GO GREEN</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tortor commodo, sollicitudin velit nec, lobortis erat. Sed rutrum metus ac augue scelerisque, vel commodo erat commodo. Mauris quis mattis sem. Maecenas dictum nunc.
-                            </p>
+
+                    <!-- Header Row: Title & Social Links -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-8">
+                            <h4 class="footer-offices-title">Our Office Locations</h4>
+                            <div class="footer-offices-divider"></div>
                         </div>
-
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>About Us</h4>
-                            <ul>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Home</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">About us</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Our services</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Terms & condition</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Privacy policy</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 footer-contact">
-                            <h4>Contact Us</h4>
-                            <p>
-                                Your Location<br>
-                                Your City<br>
-                                Your Country <br>
-                                <strong>Phone:</strong> +123-456-7890<br>
-                                <strong>Email:</strong> info@example.com<br>
-                            </p>
-
-                            <div class="social-links">
-                                <a href="https://freewebsitecode.com/"><i class="ion-logo-twitter"></i></a>
-                                <a href="https://facebook.com/freewebsitecode/"><i class="ion-logo-facebook"></i></a>
-                                <a href="https://freewebsitecode.com/"><i class="ion-logo-linkedin"></i></a>
-                                <a href="https://freewebsitecode.com/"><i class="ion-logo-instagram"></i></a>
-                                <a href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="ion-logo-youtube"></i></a>
+                        <div class="col-md-4 text-md-right mb-3 mb-md-0">
+                            <div class="social-links d-inline-flex gap-2">
+                                <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                <a href="#"><i class="ion-logo-instagram"></i></a>
                             </div>
+                        </div>
+                    </div>
 
+                    <!-- Borderless Office Locations Grid -->
+                    <div class="row g-3">
+                        
+                        <!-- Benin (Head Office) -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Benin <span class="head-tag">Head Office</span></h5>
+                                <p>5, Hudson Lane,<br>Off Akpakpava Street,<br>P.O. Box 420.</p>
+                                <strong>Phone:</strong> <a href="tel:08036666837">08036666837</a>
+                            </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 footer-newsletter">
-                            <h4>Subscription</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
-                            <form action="" method="post">
-                                <input type="email" name="email"><input type="submit"  value="Subscribe">
-                            </form>
+                        <!-- Lagos Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Lagos</h5>
+                                <p>68, Shyllon Street,<br>Off Ikorodu Road,<br>Palm Grove.</p>
+                                <strong>Phone:</strong> <a href="tel:08165304735">08165304735</a>
+                            </div>
+                        </div>
+
+                        <!-- Port Harcourt Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Port Harcourt</h5>
+                                <p>3, Worukwo Street,<br>Off Olu Obasanjo Way.</p>
+                                <strong>Phone:</strong> <a href="tel:08035430664">08035430664</a>
+                            </div>
+                        </div>
+
+                        <!-- Warri Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Warri</h5>
+                                <p>31, Warri/Effurun Road,<br>P.O. Box 541.</p>
+                                <strong>Phone:</strong> <a href="tel:08035430664">08035430664</a>
+                            </div>
                         </div>
 
                     </div>
+
                 </div>
             </div>
 
             <div class="container">
-                <div class="copyright">
-                    &copy; Copyright <a href="https://freewebsitecode.com/">Your Site Name</a>. All Rights Reserved<br>
-					Template By <a href="https://sudeep-portfolio.netlify.app">@SudeepAcharjee</a>
+                <div class="copyright text-center py-3">
+                    &copy; Copyright <strong>Anjous Uku Eweka & Co.</strong> All Rights Reserved
                 </div>
             </div>
         </footer>
