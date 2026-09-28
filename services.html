@@ -2,17 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>GO GREEN | HTML Business Template</title>
+        <title>Our Services | Anjous, Uku, Eweka & Co. (Chartered Accountants)</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <meta content="Statutory Audit, Management Audit, Taxation Consultancy, Mergers and Acquisitions, Receivership and Liquidations, Management Consultancy" name="keywords">
+        <meta content="Comprehensive statutory audit, taxation, investigation, and management consultancy services by Anjous, Uku, Eweka & Co." name="description">
 
         <!-- Favicons -->
         <link href="img/favicon.ico" rel="icon">
         <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300|Nunito:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Nunito:400,600,700&display=swap" rel="stylesheet">
 
         <!-- Bootstrap CSS File -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,36 +24,235 @@
 
         <!-- Main Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <!-- Header, Footer, and Service Page Styles -->
+        <style>
+            /* Header Nav Layout & Responsive Branding Styling */
+            .header-nav-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .brand-logo-left-group {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .company-brand-title {
+                margin: 0;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                font-size: 1.5rem;
+                line-height: 1.2;
+            }
+
+            .company-brand-title a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            .logo-placeholder-container {
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+            }
+
+            .logo-placeholder {
+                max-height: 45px;
+                max-width: 140px;
+                border: 1px dashed rgba(255, 255, 255, 0.5);
+                padding: 4px 8px;
+                color: #ffffff;
+                font-size: 0.75rem;
+                display: inline-block;
+                text-align: center;
+            }
+
+            /* Borderless & Clean Design Styles with Image Placeholders */
+            .services {
+                background-color: #f9fbfd;
+                padding: 60px 0;
+            }
+            .single-service {
+                border: none !important;
+                outline: none !important;
+                box-shadow: none !important;
+                background: transparent !important;
+                padding: 15px 10px;
+                margin-bottom: 40px;
+                transition: transform 0.3s ease;
+            }
+            .single-service:hover {
+                transform: translateY(-4px);
+            }
+            .service-img-wrapper {
+                width: 100%;
+                height: 220px;
+                overflow: hidden;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                background-color: #e2e8f0;
+            }
+            .service-img-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            .single-service h4 {
+                font-weight: 700;
+                font-size: 1.25rem;
+                color: #0A2540;
+                margin-bottom: 15px;
+            }
+            .single-service p, .single-service ul {
+                color: #526484;
+                font-size: 0.93rem;
+                line-height: 1.7;
+            }
+            .single-service ul {
+                padding-left: 18px;
+                margin-bottom: 0;
+            }
+            .single-service ul li {
+                margin-bottom: 6px;
+            }
+            .section-header h3 {
+                color: #0A2540;
+                font-weight: 700;
+            }
+            .section-header p {
+                color: #6c757d;
+                max-width: 750px;
+                margin: 0 auto 40px auto;
+            }
+
+            /* Custom Borderless Multi-Office Footer Layout & Styling */
+            .footer-offices-title {
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 8px;
+                letter-spacing: 0.5px;
+                color: #ffffff;
+            }
+
+            .footer-offices-divider {
+                width: 60px;
+                border-top: 2px dashed rgba(255, 255, 255, 0.5);
+                margin-bottom: 25px;
+            }
+
+            .office-card {
+                background: transparent !important;
+                border: none !important;
+                box-shadow: none !important;
+                padding: 0;
+                height: 100%;
+                font-size: 0.88rem;
+                line-height: 1.6;
+                color: #cbd5e0;
+            }
+
+            .office-card h5 {
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 700;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .office-card .head-tag {
+                background-color: #10b981;
+                color: #ffffff;
+                font-size: 0.68rem;
+                padding: 2px 6px;
+                border-radius: 3px;
+                margin-left: 6px;
+                vertical-align: middle;
+                font-weight: 600;
+                text-transform: none;
+            }
+
+            .office-card p {
+                margin-bottom: 8px;
+            }
+
+            .office-card a {
+                color: #a7f3d0;
+                text-decoration: none;
+            }
+
+            .office-card a:hover {
+                text-decoration: underline;
+            }
+
+            /* Responsive Adjustments for Mobile Devices */
+            @media (max-width: 768px) {
+                .header-nav-wrapper {
+                    justify-content: space-between;
+                    padding: 5px 0;
+                }
+
+                .company-brand-title {
+                    font-size: 1.1rem;
+                }
+
+                .logo-placeholder {
+                    max-height: 35px;
+                    max-width: 100px;
+                    font-size: 0.65rem;
+                    padding: 2px 4px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .company-brand-title {
+                    font-size: 0.95rem;
+                }
+                
+                .brand-logo-left-group {
+                    gap: 8px;
+                }
+            }
+        </style>
     </head>
 
     <body>
         <!-- Header Section Start -->
         <header class="header">
             <div class="container-fluid">
-                <div class="logo pull-left">
-                    <h1><a href="index.html">GO GREEN</a></h1>
-                    <!-- <a href="#"><img src="img/logo.png" alt="" title="" /></a>-->
-                </div>
+                <div class="header-nav-wrapper">
+                    
+                    <!-- Left-Aligned Brand Title and Logo Placeholder -->
+                    <div class="brand-logo-left-group pull-left">
+                        <div class="logo-placeholder-container">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="Anjous Uku Eweka & Co. Logo" class="logo-placeholder" onerror="this.style.display='none'; document.getElementById('logo-fallback-text').style.display='block';">
+                                <span id="logo-fallback-text" class="logo-placeholder" style="display:none;">[ Logo ]</span>
+                            </a>
+                        </div>
+                        <h1 class="company-brand-title"><a href="index.html">Anjous Uku Eweka & Co.</a></h1>
+                    </div>
 
-                <nav id="nav-menu-container">
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="menu-active"><a href="service.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="price.html">Price</a></li>
-                        <li class="menu-has-children"><a href="#">Dropdown <i class="dicon ion-md-arrow-dropdown"></i></a>
-                            <ul>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+                    <!-- Navigation Links -->
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li class="menu-active"><a href="services.html">Services</a></li>
+                            <li><a href="affiliates.html">Affiliates</a></li>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="insights.html">Insights</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
             </div>
         </header>
         <!-- Header Section End -->
@@ -65,7 +264,7 @@
                     <div class="banner-nav">
                         <div class="banner-box">
                             <a href="index.html">Home </a>
-                            <a href="service.html">Service</a>
+                            <a href="services.html">Services</a>
                         </div>
                     </div>
                 </div>
@@ -76,69 +275,138 @@
         <!-- Services Section Start -->
         <section id="services" class="services">
             <div class="container">
-                <header class="section-header">
-                    <h3>Services</h3>
+                <header class="section-header text-center">
+                    <h3>Our Professional Practice Areas</h3>
                     <p>
-                        Integer sollicitudin sed nulla non consequat. Nullam vitae erat quis leo accumsan ullamcorper. Suspendisse leo purus, pellentesque posuere.
+                        Anjous, Uku, Eweka & Co. (Chartered Accountants) renders high-level statutory, financial, tax, and managerial advisory services tailored to public and corporate institutions.
                     </p>
                 </header>
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+
+                    <!-- Statutory Audit -->
+                    <div class="col-lg-6 col-md-6">
                         <div class="single-service">
-                            <i class="ion-ios-desktop"></i>
-                            <h4><a href="">Web Design</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Statutory Audit">
+                            </div>
+                            <h4>STATUTORY AUDIT</h4>
+                            <p>
+                                Our firm gives audit opinions on the financial statements of companies, government corporations, and parastatal organizations in accordance with the Companies and Allied Matters Act and other enabling Enactments.
+                            </p>
+                            <p>
+                                In the course of our statutory audit, Anjous, Uku, Eweka & Co. understudies the organizational, financial, and operational controls of our clients, highlights any weaknesses that come to our notice, and makes actionable recommendations to improve performance and Return on Investment (ROI).
+                            </p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+
+                    <!-- Management Audit -->
+                    <div class="col-lg-6 col-md-6">
                         <div class="single-service">
-                            <i class="ion-ios-laptop"></i>
-                            <h4><a href="">Web Development</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Management Audit">
+                            </div>
+                            <h4>MANAGEMENT AUDIT</h4>
+                            <p>
+                                We carry out operational and value-for-money audits by reviewing policy performance and management systems to ensure economy and efficiency. We assist clients in ascertaining whether shareholder directives are being implemented and whether the company is effectively run without short-term biases compromising long-term success.
+                            </p>
+                            <p>
+                                At the conclusion of the audit, we report directly to Shareholders or the Audit Committee with targeted performance adjustments. Anjous, Uku, Eweka & Co. has extensive experience undertaking Management Audits on Joint Venture projects involving Foreign Finance.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+
+                    <!-- Investigations -->
+                    <div class="col-lg-6 col-md-6">
                         <div class="single-service">
-                            <i class="ion-ios-tablet-portrait"></i>
-                            <h4><a href="">App Design</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Investigation Services">
+                            </div>
+                            <h4>INVESTIGATION</h4>
+                            <p>We undertake specialized inquiries and independent reporting for tailored financial scenarios, including:</p>
+                            <ul>
+                                <li><strong>Prospectus Reports:</strong> Expressing independent reporting accountant opinions on prospectus financial statements for public share/debenture offerings.</li>
+                                <li><strong>Profits Forecast:</strong> Expressing professional opinions on profit forecasts during share issues, takeovers, or mergers.</li>
+                                <li>Acquisition of Companies & Purchase of Business.</li>
+                                <li>Prospective Lending and Investment Evaluation.</li>
+                                <li>Partnership Arrangements & Forensic Fraud Inquiries.</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+
+                    <!-- Mergers and Acquisitions -->
+                    <div class="col-lg-6 col-md-6">
                         <div class="single-service">
-                            <i class="ion-ios-phone-portrait"></i>
-                            <h4><a href="">App Development</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Mergers and Acquisitions">
+                            </div>
+                            <h4>MERGERS AND ACQUISITIONS</h4>
+                            <p>
+                                Anjous, Uku, Eweka & Co. assists corporate entities across all accounting and financial aspects of Mergers and Acquisitions. We provide continuous evaluation reports and valuation metrics to ensure intended operational and financial synergies are fully realized.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+
+                    <!-- Taxation Consultancy -->
+                    <div class="col-lg-6 col-md-6">
                         <div class="single-service">
-                            <i class="ion-ios-desktop"></i>
-                            <h4><a href="">Web Design</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Taxation Consultancy">
+                            </div>
+                            <h4>TAXATION CONSULTANCY</h4>
+                            <p>
+                                We act as lead advisors on comprehensive taxation matters covering corporate and individual tax affairs. Our core tax solutions include tax computations, statutory filing of returns with Federal and State Revenue Authorities, and obtaining Tax Clearance Certificates (TCC).
+                            </p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+
+                    <!-- Receivership and Liquidations -->
+                    <div class="col-lg-6 col-md-6">
                         <div class="single-service">
-                            <i class="ion-ios-laptop"></i>
-                            <h4><a href="">Web Development</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Receivership and Liquidations">
+                            </div>
+                            <h4>RECEIVERSHIP AND LIQUIDATIONS</h4>
+                            <p>
+                                Anjous, Uku, Eweka & Co. acts as Receivers and Managers regarding the dissolution of Corporate and Non-Corporate bodies under Voluntary or Compulsory winding up in strict accordance with the Companies and Allied Matters Act and other enabling enactments.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+
+                    <!-- Management Consultancy -->
+                    <div class="col-lg-12">
                         <div class="single-service">
-                            <i class="ion-ios-tablet-portrait"></i>
-                            <h4><a href="">App Design</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                            <div class="service-img-wrapper" style="height: 280px;">
+                                <img src="img/Placeholder.jpg" alt="Management Consultancy">
+                            </div>
+                            <h4>MANAGEMENT CONSULTANCY</h4>
+                            <p>Anjous, Uku, Eweka & Co. provides end-to-end specialized management consulting across the following capabilities:</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Designing and Installation of Accounting Systems</li>
+                                        <li>Company Secretaryship Services</li>
+                                        <li>Business Permit & Expatriate Quota Advisory</li>
+                                        <li>Technical Service Contracts & Agency Arrangements</li>
+                                        <li>Human Resources Management – Recruitment & Development</li>
+                                        <li>Incorporation of Limited & Unlimited Liability Companies</li>
+                                        <li>Cash Flow Projections, Planning, and Control Systems</li>
+                                        <li>Feasibility Studies & Business Plan Development</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Business Environment Information & Strategic Intelligence</li>
+                                        <li>Industry Cameos and Performance Comparisons</li>
+                                        <li>Data Processing & Computerization of Accounting Systems</li>
+                                        <li>Management Accounts & Information Systems (MIS) Design</li>
+                                        <li>Budgeting & Budgetary Control Systems</li>
+                                        <li>Cost Management & Financial Architecture Design</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-service">
-                            <i class="ion-ios-phone-portrait"></i>
-                            <h4><a href="">App Development</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -146,63 +414,70 @@
 
         <!-- Footer Start -->
         <footer class="footer">
-            <div class="footer-top">
+            <div class="footer-top" style="padding: 60px 0 40px 0;">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 footer-info">
-                            <h3>GO GREEN</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tortor commodo, sollicitudin velit nec, lobortis erat. Sed rutrum metus ac augue scelerisque, vel commodo erat commodo. Mauris quis mattis sem. Maecenas dictum nunc.
-                            </p>
+
+                    <!-- Header Row: Title & Social Links -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-8">
+                            <h4 class="footer-offices-title">Our Office Locations</h4>
+                            <div class="footer-offices-divider"></div>
                         </div>
-
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>About Us</h4>
-                            <ul>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Home</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">About us</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Our services</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Terms & condition</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Privacy policy</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 footer-contact">
-                            <h4>Contact Us</h4>
-                            <p>
-                                Your Location<br>
-                                Your City<br>
-                                Your Country <br>
-                                <strong>Phone:</strong> +123-456-7890<br>
-                                <strong>Email:</strong> info@example.com<br>
-                            </p>
-
-                            <div class="social-links">
-                                <a href="https://freewebsitecode.com/"><i class="ion-logo-twitter"></i></a>
-                                <a href="https://facebook.com/freewebsitecode/"><i class="ion-logo-facebook"></i></a>
-                                <a href="https://freewebsitecode.com/"><i class="ion-logo-linkedin"></i></a>
-                                <a href="https://freewebsitecode.com/"><i class="ion-logo-instagram"></i></a>
-                                <a href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="ion-logo-youtube"></i></a>
+                        <div class="col-md-4 text-md-right mb-3 mb-md-0">
+                            <div class="social-links d-inline-flex gap-2">
+                                <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                <a href="#"><i class="ion-logo-instagram"></i></a>
                             </div>
+                        </div>
+                    </div>
 
+                    <!-- Borderless Office Locations Grid -->
+                    <div class="row g-3">
+                        
+                        <!-- Benin (Head Office) -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Benin <span class="head-tag">Head Office</span></h5>
+                                <p>5, Hudson Lane,<br>Off Akpakpava Street,<br>P.O. Box 420.</p>
+                                <strong>Phone:</strong> <a href="tel:08036666837">08036666837</a>
+                            </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 footer-newsletter">
-                            <h4>Subscription</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
-                            <form action="" method="post">
-                                <input type="email" name="email"><input type="submit"  value="Subscribe">
-                            </form>
+                        <!-- Lagos Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Lagos</h5>
+                                <p>68, Shyllon Street,<br>Off Ikorodu Road,<br>Palm Grove.</p>
+                                <strong>Phone:</strong> <a href="tel:08165304735">08165304735</a>
+                            </div>
+                        </div>
+
+                        <!-- Port Harcourt Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Port Harcourt</h5>
+                                <p>3, Worukwo Street,<br>Off Olu Obasanjo Way.</p>
+                                <strong>Phone:</strong> <a href="tel:08035430664">08035430664</a>
+                            </div>
+                        </div>
+
+                        <!-- Warri Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Warri</h5>
+                                <p>31, Warri/Effurun Road,<br>P.O. Box 541.</p>
+                                <strong>Phone:</strong> <a href="tel:08035430664">08035430664</a>
+                            </div>
                         </div>
 
                     </div>
+
                 </div>
             </div>
 
             <div class="container">
-                <div class="copyright">
-                    &copy; Copyright <a href="https://freewebsitecode.com/">Your Site Name</a>. All Rights Reserved<br>
-					Template By <a href="https://sudeep-portfolio.netlify.app">@SudeepAcharjee</a>
+                <div class="copyright text-center py-3">
+                    &copy; Copyright <strong>Anjous Uku Eweka & Co.</strong> All Rights Reserved
                 </div>
             </div>
         </footer>
