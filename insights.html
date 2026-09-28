@@ -2,13 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Insights | Anjous Uku Eweka & Co.</title>
+        <title>Our Services | Anjous, Uku, Eweka & Co. (Chartered Accountants)</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Accounting, Audit, Tax Advisory, Financial Advisory, Corporate Secretarial Services, Anjous Uku Eweka & Co, Insights" name="keywords">
-        <meta content="Anjous Uku Eweka & Co. provides professional auditing, accounting, tax compliance, and business advisory services." name="description">
+        <meta content="Statutory Audit, Management Audit, Taxation Consultancy, Mergers and Acquisitions, Receivership and Liquidations, Management Consultancy" name="keywords">
+        <meta content="Comprehensive statutory audit, taxation, investigation, and management consultancy services by Anjous, Uku, Eweka & Co." name="description">
 
         <!-- Favicons -->
         <link href="img/favicon.ico" rel="icon">
+        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Nunito:400,600,700&display=swap" rel="stylesheet">
@@ -24,6 +25,7 @@
         <!-- Main Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
 
+        <!-- Header, Footer, and Service Page Styles -->
         <style>
             /* Header Nav Layout & Responsive Branding Styling */
             .header-nav-wrapper {
@@ -70,93 +72,12 @@
                 text-align: center;
             }
 
-            /* --- Animated Dropdown Styling --- */
-            .nav-menu li.menu-has-children {
-                position: relative;
-            }
-
-            .nav-menu ul {
-                position: absolute;
-                display: block;
-                top: 100%;
-                left: 0;
-                z-index: 99;
-                min-width: 200px;
-                background: #ffffff;
-                padding: 10px 0;
-                margin: 10px 0 0 0;
-                border-radius: 8px;
-                border-top: 3px solid #10b981; /* Firm Accent Emerald */
-                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
-                
-                /* Animation initial state */
-                opacity: 0;
-                visibility: hidden;
-                transform: translateY(15px);
-                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            }
-
-            .nav-menu li.menu-has-children:hover > ul {
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-            }
-
-            .nav-menu ul li {
-                list-style: none;
-                transition: background 0.2s ease;
-            }
-
-            .nav-menu ul a {
-                display: block;
-                padding: 10px 20px;
-                color: #333333;
-                font-family: 'Nunito', sans-serif;
-                font-size: 14px;
-                font-weight: 400;
-                text-transform: none;
-                transition: color 0.25s ease, padding-left 0.25s ease, background-color 0.25s ease;
-            }
-
-            .nav-menu ul a:hover {
-                color: #10b981;
-                background-color: #f0fff4;
-                padding-left: 25px;
-            }
-
-            .nav-menu .menu-has-children > a .dicon {
-                display: inline-block;
-                transition: transform 0.3s ease;
-            }
-
-            .nav-menu .menu-has-children:hover > a .dicon {
-                transform: rotate(180deg);
-            }
-
-            /* --- Banner Section --- */
-            .banner {
-                padding: 70px 0 40px 0;
-                position: relative;
-                background: linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.75)), 
-                            url('img/Placeholder.jpg') center center / cover no-repeat;
-            }
-
-            .banner-box a {
-                color: #a7f3d0;
-                font-weight: 600;
-                text-decoration: none;
-            }
-
-            .banner-box span {
-                color: #ffffff;
-            }
-
-            /* --- Borderless & Clean Design Styles (Adopted from Services) --- */
-            .insights-section {
+            /* Borderless & Clean Design Styles with Image Placeholders */
+            .services {
                 background-color: #f9fbfd;
                 padding: 60px 0;
             }
-            .single-insight-card {
+            .single-service {
                 border: none !important;
                 outline: none !important;
                 box-shadow: none !important;
@@ -165,10 +86,10 @@
                 margin-bottom: 40px;
                 transition: transform 0.3s ease;
             }
-            .single-insight-card:hover {
+            .single-service:hover {
                 transform: translateY(-4px);
             }
-            .insight-img-wrapper {
+            .service-img-wrapper {
                 width: 100%;
                 height: 220px;
                 overflow: hidden;
@@ -176,36 +97,28 @@
                 margin-bottom: 20px;
                 background-color: #e2e8f0;
             }
-            .insight-img-wrapper img {
+            .service-img-wrapper img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 display: block;
             }
-            .single-insight-card h4 {
+            .single-service h4 {
                 font-weight: 700;
                 font-size: 1.25rem;
                 color: #0A2540;
-                margin-bottom: 12px;
+                margin-bottom: 15px;
             }
-            .single-insight-card .insight-meta {
-                font-size: 0.82rem;
-                color: #10b981;
-                font-weight: 600;
-                margin-bottom: 10px;
-                text-transform: uppercase;
-                letter-spacing: 0.5px;
-            }
-            .single-insight-card p, .single-insight-card ul {
+            .single-service p, .single-service ul {
                 color: #526484;
                 font-size: 0.93rem;
                 line-height: 1.7;
             }
-            .single-insight-card ul {
+            .single-service ul {
                 padding-left: 18px;
                 margin-bottom: 0;
             }
-            .single-insight-card ul li {
+            .single-service ul li {
                 margin-bottom: 6px;
             }
             .section-header h3 {
@@ -218,7 +131,7 @@
                 margin: 0 auto 40px auto;
             }
 
-            /* --- Custom Borderless Multi-Office Footer Layout & Styling --- */
+            /* Custom Borderless Multi-Office Footer Layout & Styling */
             .footer-offices-title {
                 font-size: 1.25rem;
                 font-weight: 700;
@@ -331,14 +244,10 @@
                         <ul class="nav-menu">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
-                            <li class="menu-has-children"><a href="#">Dropdown <i class="dicon ion-md-arrow-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="affiliates.html">Affiliates</a></li>
-                                    <li><a href="clients.html">Clients</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-active"><a href="insights.html">Insights</a></li>
+                            <li class="menu-active"><a href="services.html">Services</a></li>
+                            <li><a href="affiliates.html">Affiliates</a></li>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="insights.html">Insights</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </nav>
@@ -347,7 +256,7 @@
             </div>
         </header>
         <!-- Header Section End -->
-
+        
         <!-- Banner Section Start-->
         <section class="banner">
             <div class="container">
@@ -355,7 +264,7 @@
                     <div class="banner-nav">
                         <div class="banner-box">
                             <a href="index.html">Home </a>
-                            <a href="insights.html">Insights</a>
+                            <a href="services.html">Services</a>
                         </div>
                     </div>
                 </div>
@@ -363,122 +272,145 @@
         </section>
         <!-- Banner Section End-->
 
-        <!-- Main Content Area: Insights Grid Styled Like Services -->
-        <main id="main">
-            <section class="insights-section">
-                <div class="container">
-                    <header class="section-header text-center">
-                        <h3>Industry Insights & Thought Leadership</h3>
-                        <p>
-                            Expert perspectives, regulatory updates, and financial analysis curated by the senior partners at Anjous, Uku, Eweka & Co.
-                        </p>
-                    </header>
-                    <div class="row">
+        <!-- Services Section Start -->
+        <section id="services" class="services">
+            <div class="container">
+                <header class="section-header text-center">
+                    <h3>Our Professional Practice Areas</h3>
+                    <p>
+                        Anjous, Uku, Eweka & Co. (Chartered Accountants) renders high-level statutory, financial, tax, and managerial advisory services tailored to public and corporate institutions.
+                    </p>
+                </header>
+                <div class="row">
 
-                        <!-- Insight 1 -->
-                        <div class="col-lg-6 col-md-6">
-                            <div class="single-insight-card">
-                                <div class="insight-img-wrapper">
-                                    <img src="img/Placeholder.jpg" alt="Tax Regulatory Updates">
-                                </div>
-                                <div class="insight-meta">Taxation & Regulatory Policy</div>
-                                <h4>Navigating Recent Statutory Tax Compliance Revisions</h4>
-                                <p>
-                                    An overview of recent updates to national tax frameworks, corporate tax computation rules, and statutory filing guidelines issued by Revenue Authorities.
-                                </p>
-                                <p>
-                                    Our tax experts analyze key enforcement trends, practical implications for corporate compliance, and strategies for managing tax exposure effectively.
-                                </p>
+                    <!-- Statutory Audit -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-service">
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Statutory Audit">
                             </div>
+                            <h4>STATUTORY AUDIT</h4>
+                            <p>
+                                Our firm gives audit opinions on the financial statements of companies, government corporations, and parastatal organizations in accordance with the Companies and Allied Matters Act and other enabling Enactments.
+                            </p>
+                            <p>
+                                In the course of our statutory audit, Anjous, Uku, Eweka & Co. understudies the organizational, financial, and operational controls of our clients, highlights any weaknesses that come to our notice, and makes actionable recommendations to improve performance and Return on Investment (ROI).
+                            </p>
                         </div>
-
-                        <!-- Insight 2 -->
-                        <div class="col-lg-6 col-md-6">
-                            <div class="single-insight-card">
-                                <div class="insight-img-wrapper">
-                                    <img src="img/Placeholder.jpg" alt="Corporate Audit Trends">
-                                </div>
-                                <div class="insight-meta">Audit & Assurance</div>
-                                <h4>Enhancing Internal Controls for Sustainable Corporate Growth</h4>
-                                <p>
-                                    A practical guide to strengthening financial and operational controls within medium to large-scale enterprises under modern statutory standards.
-                                </p>
-                                <p>
-                                    We highlight common systemic vulnerabilities uncovered during statutory audits and offer actionable recommendations to protect asset integrity.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Insight 3 -->
-                        <div class="col-lg-6 col-md-6">
-                            <div class="single-insight-card">
-                                <div class="insight-img-wrapper">
-                                    <img src="img/Placeholder.jpg" alt="Financial Valuation">
-                                </div>
-                                <div class="insight-meta">Financial Advisory</div>
-                                <h4>Key Valuation Considerations in Mergers and Acquisitions</h4>
-                                <p>
-                                    Understanding the core valuation metrics, due diligence steps, and synergy assessments essential for executing successful M&A transactions.
-                                </p>
-                                <ul>
-                                    <li><strong>Risk Assessment:</strong> Uncovering hidden operational liabilities prior to acquisition.</li>
-                                    <li><strong>Synergy Quantification:</strong> Evaluating realistic return metrics for combined business models.</li>
-                                    <li><strong>Forensic Review:</strong> Conducting rigorous financial inquiries to safeguard investment capital.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Insight 4 -->
-                        <div class="col-lg-6 col-md-6">
-                            <div class="single-insight-card">
-                                <div class="insight-img-wrapper">
-                                    <img src="img/Placeholder.jpg" alt="Corporate Restructuring">
-                                </div>
-                                <div class="insight-meta">Management Advisory</div>
-                                <h4>Strategic Liquidation & Receivership Practices</h4>
-                                <p>
-                                    Navigating formal corporate restructuring, voluntary winding up, and asset management under statutory CAMA guidelines.
-                                </p>
-                                <p>
-                                    This insight explores structured procedures for protecting creditor rights and managing orderly business dissolutions.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Featured Full-Width Insight -->
-                        <div class="col-lg-12">
-                            <div class="single-insight-card">
-                                <div class="insight-img-wrapper" style="height: 280px;">
-                                    <img src="img/Placeholder.jpg" alt="Digital Financial Architecture">
-                                </div>
-                                <div class="insight-meta">Management & Digital Systems</div>
-                                <h4>Modernizing Financial Architecture and MIS Design</h4>
-                                <p>
-                                    How establishing tailored Management Information Systems (MIS) and automated accounting controls drives operational precision across public and private sector organizations.
-                                </p>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <li>Automated Accounting System Integration</li>
-                                            <li>Real-time Budgetary Control and Variance Tracking</li>
-                                            <li>Custom Management Accounting Reporting Frameworks</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <li>Strategic Intelligence and Business Forecasting</li>
-                                            <li>Capital Architecture and Cash Flow Planning</li>
-                                            <li>Compliance Controls for Joint Venture Operations</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
+
+                    <!-- Management Audit -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-service">
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Management Audit">
+                            </div>
+                            <h4>MANAGEMENT AUDIT</h4>
+                            <p>
+                                We carry out operational and value-for-money audits by reviewing policy performance and management systems to ensure economy and efficiency. We assist clients in ascertaining whether shareholder directives are being implemented and whether the company is effectively run without short-term biases compromising long-term success.
+                            </p>
+                            <p>
+                                At the conclusion of the audit, we report directly to Shareholders or the Audit Committee with targeted performance adjustments. Anjous, Uku, Eweka & Co. has extensive experience undertaking Management Audits on Joint Venture projects involving Foreign Finance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Investigations -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-service">
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Investigation Services">
+                            </div>
+                            <h4>INVESTIGATION</h4>
+                            <p>We undertake specialized inquiries and independent reporting for tailored financial scenarios, including:</p>
+                            <ul>
+                                <li><strong>Prospectus Reports:</strong> Expressing independent reporting accountant opinions on prospectus financial statements for public share/debenture offerings.</li>
+                                <li><strong>Profits Forecast:</strong> Expressing professional opinions on profit forecasts during share issues, takeovers, or mergers.</li>
+                                <li>Acquisition of Companies & Purchase of Business.</li>
+                                <li>Prospective Lending and Investment Evaluation.</li>
+                                <li>Partnership Arrangements & Forensic Fraud Inquiries.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mergers and Acquisitions -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-service">
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Mergers and Acquisitions">
+                            </div>
+                            <h4>MERGERS AND ACQUISITIONS</h4>
+                            <p>
+                                Anjous, Uku, Eweka & Co. assists corporate entities across all accounting and financial aspects of Mergers and Acquisitions. We provide continuous evaluation reports and valuation metrics to ensure intended operational and financial synergies are fully realized.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Taxation Consultancy -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-service">
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Taxation Consultancy">
+                            </div>
+                            <h4>TAXATION CONSULTANCY</h4>
+                            <p>
+                                We act as lead advisors on comprehensive taxation matters covering corporate and individual tax affairs. Our core tax solutions include tax computations, statutory filing of returns with Federal and State Revenue Authorities, and obtaining Tax Clearance Certificates (TCC).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Receivership and Liquidations -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-service">
+                            <div class="service-img-wrapper">
+                                <img src="img/Placeholder.jpg" alt="Receivership and Liquidations">
+                            </div>
+                            <h4>RECEIVERSHIP AND LIQUIDATIONS</h4>
+                            <p>
+                                Anjous, Uku, Eweka & Co. acts as Receivers and Managers regarding the dissolution of Corporate and Non-Corporate bodies under Voluntary or Compulsory winding up in strict accordance with the Companies and Allied Matters Act and other enabling enactments.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Management Consultancy -->
+                    <div class="col-lg-12">
+                        <div class="single-service">
+                            <div class="service-img-wrapper" style="height: 280px;">
+                                <img src="img/Placeholder.jpg" alt="Management Consultancy">
+                            </div>
+                            <h4>MANAGEMENT CONSULTANCY</h4>
+                            <p>Anjous, Uku, Eweka & Co. provides end-to-end specialized management consulting across the following capabilities:</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Designing and Installation of Accounting Systems</li>
+                                        <li>Company Secretaryship Services</li>
+                                        <li>Business Permit & Expatriate Quota Advisory</li>
+                                        <li>Technical Service Contracts & Agency Arrangements</li>
+                                        <li>Human Resources Management – Recruitment & Development</li>
+                                        <li>Incorporation of Limited & Unlimited Liability Companies</li>
+                                        <li>Cash Flow Projections, Planning, and Control Systems</li>
+                                        <li>Feasibility Studies & Business Plan Development</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Business Environment Information & Strategic Intelligence</li>
+                                        <li>Industry Cameos and Performance Comparisons</li>
+                                        <li>Data Processing & Computerization of Accounting Systems</li>
+                                        <li>Management Accounts & Information Systems (MIS) Design</li>
+                                        <li>Budgeting & Budgetary Control Systems</li>
+                                        <li>Cost Management & Financial Architecture Design</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+        <!-- Services Section End -->
 
         <!-- Footer Start -->
         <footer class="footer">
