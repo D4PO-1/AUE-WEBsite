@@ -2,17 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>GO GREEN | HTML corporate Template</title>
+        <title>Insights | Anjous Uku Eweka & Co.</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <meta content="Accounting, Audit, Tax Advisory, Financial Advisory, Corporate Secretarial Services, Anjous Uku Eweka & Co, Insights" name="keywords">
+        <meta content="Anjous Uku Eweka & Co. provides professional auditing, accounting, tax compliance, and business advisory services." name="description">
 
         <!-- Favicons -->
         <link href="img/favicon.ico" rel="icon">
-        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300|Nunito:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Nunito:400,600,700&display=swap" rel="stylesheet">
 
         <!-- Bootstrap CSS File -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,40 +23,331 @@
 
         <!-- Main Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            /* Header Nav Layout & Responsive Branding Styling */
+            .header-nav-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .brand-logo-left-group {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .company-brand-title {
+                margin: 0;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                font-size: 1.5rem;
+                line-height: 1.2;
+            }
+
+            .company-brand-title a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            .logo-placeholder-container {
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+            }
+
+            .logo-placeholder {
+                max-height: 45px;
+                max-width: 140px;
+                border: 1px dashed rgba(255, 255, 255, 0.5);
+                padding: 4px 8px;
+                color: #ffffff;
+                font-size: 0.75rem;
+                display: inline-block;
+                text-align: center;
+            }
+
+            /* --- Animated Dropdown Styling --- */
+            .nav-menu li.menu-has-children {
+                position: relative;
+            }
+
+            .nav-menu ul {
+                position: absolute;
+                display: block;
+                top: 100%;
+                left: 0;
+                z-index: 99;
+                min-width: 200px;
+                background: #ffffff;
+                padding: 10px 0;
+                margin: 10px 0 0 0;
+                border-radius: 8px;
+                border-top: 3px solid #10b981; /* Firm Accent Emerald */
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+                
+                /* Animation initial state */
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(15px);
+                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            }
+
+            .nav-menu li.menu-has-children:hover > ul {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+
+            .nav-menu ul li {
+                list-style: none;
+                transition: background 0.2s ease;
+            }
+
+            .nav-menu ul a {
+                display: block;
+                padding: 10px 20px;
+                color: #333333;
+                font-family: 'Nunito', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: none;
+                transition: color 0.25s ease, padding-left 0.25s ease, background-color 0.25s ease;
+            }
+
+            .nav-menu ul a:hover {
+                color: #10b981;
+                background-color: #f0fff4;
+                padding-left: 25px;
+            }
+
+            .nav-menu .menu-has-children > a .dicon {
+                display: inline-block;
+                transition: transform 0.3s ease;
+            }
+
+            .nav-menu .menu-has-children:hover > a .dicon {
+                transform: rotate(180deg);
+            }
+
+            /* --- Banner Section --- */
+            .banner {
+                padding: 70px 0 40px 0;
+                position: relative;
+                background: linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.75)), 
+                            url('img/Placeholder.jpg') center center / cover no-repeat;
+            }
+
+            .banner-box a {
+                color: #a7f3d0;
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            .banner-box span {
+                color: #ffffff;
+            }
+
+            /* --- Borderless & Clean Design Styles (Adopted from Services) --- */
+            .insights-section {
+                background-color: #f9fbfd;
+                padding: 60px 0;
+            }
+            .single-insight-card {
+                border: none !important;
+                outline: none !important;
+                box-shadow: none !important;
+                background: transparent !important;
+                padding: 15px 10px;
+                margin-bottom: 40px;
+                transition: transform 0.3s ease;
+            }
+            .single-insight-card:hover {
+                transform: translateY(-4px);
+            }
+            .insight-img-wrapper {
+                width: 100%;
+                height: 220px;
+                overflow: hidden;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                background-color: #e2e8f0;
+            }
+            .insight-img-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            .single-insight-card h4 {
+                font-weight: 700;
+                font-size: 1.25rem;
+                color: #0A2540;
+                margin-bottom: 12px;
+            }
+            .single-insight-card .insight-meta {
+                font-size: 0.82rem;
+                color: #10b981;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            .single-insight-card p, .single-insight-card ul {
+                color: #526484;
+                font-size: 0.93rem;
+                line-height: 1.7;
+            }
+            .single-insight-card ul {
+                padding-left: 18px;
+                margin-bottom: 0;
+            }
+            .single-insight-card ul li {
+                margin-bottom: 6px;
+            }
+            .section-header h3 {
+                color: #0A2540;
+                font-weight: 700;
+            }
+            .section-header p {
+                color: #6c757d;
+                max-width: 750px;
+                margin: 0 auto 40px auto;
+            }
+
+            /* --- Custom Borderless Multi-Office Footer Layout & Styling --- */
+            .footer-offices-title {
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 8px;
+                letter-spacing: 0.5px;
+                color: #ffffff;
+            }
+
+            .footer-offices-divider {
+                width: 60px;
+                border-top: 2px dashed rgba(255, 255, 255, 0.5);
+                margin-bottom: 25px;
+            }
+
+            .office-card {
+                background: transparent !important;
+                border: none !important;
+                box-shadow: none !important;
+                padding: 0;
+                height: 100%;
+                font-size: 0.88rem;
+                line-height: 1.6;
+                color: #cbd5e0;
+            }
+
+            .office-card h5 {
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 700;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .office-card .head-tag {
+                background-color: #10b981;
+                color: #ffffff;
+                font-size: 0.68rem;
+                padding: 2px 6px;
+                border-radius: 3px;
+                margin-left: 6px;
+                vertical-align: middle;
+                font-weight: 600;
+                text-transform: none;
+            }
+
+            .office-card p {
+                margin-bottom: 8px;
+            }
+
+            .office-card a {
+                color: #a7f3d0;
+                text-decoration: none;
+            }
+
+            .office-card a:hover {
+                text-decoration: underline;
+            }
+
+            /* Responsive Adjustments for Mobile Devices */
+            @media (max-width: 768px) {
+                .header-nav-wrapper {
+                    justify-content: space-between;
+                    padding: 5px 0;
+                }
+
+                .company-brand-title {
+                    font-size: 1.1rem;
+                }
+
+                .logo-placeholder {
+                    max-height: 35px;
+                    max-width: 100px;
+                    font-size: 0.65rem;
+                    padding: 2px 4px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .company-brand-title {
+                    font-size: 0.95rem;
+                }
+                
+                .brand-logo-left-group {
+                    gap: 8px;
+                }
+            }
+        </style>
     </head>
 
     <body>
         <!-- Header Section Start -->
         <header class="header">
             <div class="container-fluid">
-                <div class="logo pull-left">
-                    <h1><a href="index.html">GO GREEN</a></h1>
-                    <!-- <a href="#"><img src="img/logo.png" alt="" title="" /></a>-->
-                </div>
+                <div class="header-nav-wrapper">
+                    
+                    <!-- Left-Aligned Brand Title and Logo Placeholder -->
+                    <div class="brand-logo-left-group pull-left">
+                        <div class="logo-placeholder-container">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="Anjous Uku Eweka & Co. Logo" class="logo-placeholder" onerror="this.style.display='none'; document.getElementById('logo-fallback-text').style.display='block';">
+                                <span id="logo-fallback-text" class="logo-placeholder" style="display:none;">[ Logo ]</span>
+                            </a>
+                        </div>
+                        <h1 class="company-brand-title"><a href="index.html">Anjous Uku Eweka & Co.</a></h1>
+                    </div>
 
-                <nav id="nav-menu-container">
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li class="menu-active"><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="price.html">Price</a></li>
-                        <li class="menu-has-children"><a href="#">Dropdown <i class="dicon ion-md-arrow-dropdown"></i></a>
-                            <ul>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                                <li><a href="">Dropdown Menu</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+                    <!-- Navigation Links -->
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li class="menu-has-children"><a href="#">Dropdown <i class="dicon ion-md-arrow-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="affiliates.html">Affiliates</a></li>
+                                    <li><a href="clients.html">Clients</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-active"><a href="insights.html">Insights</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
             </div>
         </header>
         <!-- Header Section End -->
-        
+
         <!-- Banner Section Start-->
         <section class="banner">
             <div class="container">
@@ -65,7 +355,7 @@
                     <div class="banner-nav">
                         <div class="banner-box">
                             <a href="index.html">Home </a>
-                            <a href="portfolio.html">Portfolio</a>
+                            <a href="insights.html">Insights</a>
                         </div>
                     </div>
                 </div>
@@ -73,184 +363,189 @@
         </section>
         <!-- Banner Section End-->
 
-        <!-- Portfolio Section Start -->
-        <section class="portfolio">
-            <div class="container">
+        <!-- Main Content Area: Insights Grid Styled Like Services -->
+        <main id="main">
+            <section class="insights-section">
+                <div class="container">
+                    <header class="section-header text-center">
+                        <h3>Industry Insights & Thought Leadership</h3>
+                        <p>
+                            Expert perspectives, regulatory updates, and financial analysis curated by the senior partners at Anjous, Uku, Eweka & Co.
+                        </p>
+                    </header>
+                    <div class="row">
 
-                <header class="section-header">
-                    <h3 class="section-title">Our Portfolio</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra ligula nec hendrerit. Ut eu libero nec magna placerat fringilla.
-                    </p>
-                </header>
+                        <!-- Insight 1 -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-insight-card">
+                                <div class="insight-img-wrapper">
+                                    <img src="img/Placeholder.jpg" alt="Tax Regulatory Updates">
+                                </div>
+                                <div class="insight-meta">Taxation & Regulatory Policy</div>
+                                <h4>Navigating Recent Statutory Tax Compliance Revisions</h4>
+                                <p>
+                                    An overview of recent updates to national tax frameworks, corporate tax computation rules, and statutory filing guidelines issued by Revenue Authorities.
+                                </p>
+                                <p>
+                                    Our tax experts analyze key enforcement trends, practical implications for corporate compliance, and strategies for managing tax exposure effectively.
+                                </p>
+                            </div>
+                        </div>
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".web-des">Web Design</li>
-                            <li data-filter=".web-dev">Web Development</li>
-                            <li data-filter=".app-des">App Design</li>
-                            <li data-filter=".app-dev">App Development</li>
-                        </ul>
+                        <!-- Insight 2 -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-insight-card">
+                                <div class="insight-img-wrapper">
+                                    <img src="img/Placeholder.jpg" alt="Corporate Audit Trends">
+                                </div>
+                                <div class="insight-meta">Audit & Assurance</div>
+                                <h4>Enhancing Internal Controls for Sustainable Corporate Growth</h4>
+                                <p>
+                                    A practical guide to strengthening financial and operational controls within medium to large-scale enterprises under modern statutory standards.
+                                </p>
+                                <p>
+                                    We highlight common systemic vulnerabilities uncovered during statutory audits and offer actionable recommendations to protect asset integrity.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Insight 3 -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-insight-card">
+                                <div class="insight-img-wrapper">
+                                    <img src="img/Placeholder.jpg" alt="Financial Valuation">
+                                </div>
+                                <div class="insight-meta">Financial Advisory</div>
+                                <h4>Key Valuation Considerations in Mergers and Acquisitions</h4>
+                                <p>
+                                    Understanding the core valuation metrics, due diligence steps, and synergy assessments essential for executing successful M&A transactions.
+                                </p>
+                                <ul>
+                                    <li><strong>Risk Assessment:</strong> Uncovering hidden operational liabilities prior to acquisition.</li>
+                                    <li><strong>Synergy Quantification:</strong> Evaluating realistic return metrics for combined business models.</li>
+                                    <li><strong>Forensic Review:</strong> Conducting rigorous financial inquiries to safeguard investment capital.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Insight 4 -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-insight-card">
+                                <div class="insight-img-wrapper">
+                                    <img src="img/Placeholder.jpg" alt="Corporate Restructuring">
+                                </div>
+                                <div class="insight-meta">Management Advisory</div>
+                                <h4>Strategic Liquidation & Receivership Practices</h4>
+                                <p>
+                                    Navigating formal corporate restructuring, voluntary winding up, and asset management under statutory CAMA guidelines.
+                                </p>
+                                <p>
+                                    This insight explores structured procedures for protecting creditor rights and managing orderly business dissolutions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Featured Full-Width Insight -->
+                        <div class="col-lg-12">
+                            <div class="single-insight-card">
+                                <div class="insight-img-wrapper" style="height: 280px;">
+                                    <img src="img/Placeholder.jpg" alt="Digital Financial Architecture">
+                                </div>
+                                <div class="insight-meta">Management & Digital Systems</div>
+                                <h4>Modernizing Financial Architecture and MIS Design</h4>
+                                <p>
+                                    How establishing tailored Management Information Systems (MIS) and automated accounting controls drives operational precision across public and private sector organizations.
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li>Automated Accounting System Integration</li>
+                                            <li>Real-time Budgetary Control and Variance Tracking</li>
+                                            <li>Custom Management Accounting Reporting Frameworks</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li>Strategic Intelligence and Business Forecasting</li>
+                                            <li>Capital Architecture and Cash Flow Planning</li>
+                                            <li>Compliance Controls for Joint Venture Operations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 portfolio-item web-des">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="img/portfolio-1.jpg" class="img-fluid" alt="Portfolio">
-                                <a href="img/portfolio-1.jpg" data-lightbox="portfolio" data-title="Lorem ipsum dolor" class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
-                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                            </figure>
-
-                            <div class="portfolio-info">
-                                <h4>Lorem ipsum dolor</h4>
-                                <p>Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item web-dev">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="img/portfolio-2.jpg" class="img-fluid" alt="Portfolio">
-                                <a href="img/portfolio-2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Nulla ullamcorper pharetra" title="Preview"><i class="ion-md-eye"></i></a>
-                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                            </figure>
-
-                            <div class="portfolio-info">
-                                <h4>Nulla ullamcorper pharetra</h4>
-                                <p>Web Development</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item app-des">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="img/portfolio-3.jpg" class="img-fluid" alt="Portfolio">
-                                <a href="img/portfolio-3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
-                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                            </figure>
-
-                            <div class="portfolio-info">
-                                <h4>Phasellus eget dictum</h4>
-                                <p>App Design</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item app-dev">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="img/portfolio-4.jpg" class="img-fluid" alt="Portfolio">
-                                <a href="img/portfolio-4.jpg" data-lightbox="portfolio" data-title="Lorem ipsum dolor" class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
-                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                            </figure>
-
-                            <div class="portfolio-info">
-                                <h4>Donec mattis vestibulum</h4>
-                                <p>App Development</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item web-des">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="img/portfolio-5.jpg" class="img-fluid" alt="Portfolio">
-                                <a href="img/portfolio-5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Nulla ullamcorper pharetra" title="Preview"><i class="ion-md-eye"></i></a>
-                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                            </figure>
-
-                            <div class="portfolio-info">
-                                <h4>Pellentesque ullamcorper</h4>
-                                <p>Web Design</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item web-dev">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="img/portfolio-6.jpg" class="img-fluid" alt="Portfolio">
-                                <a href="img/portfolio-6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
-                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                            </figure>
-
-                            <div class="portfolio-info">
-                                <h4>Sed pretium sapien</h4>
-                                <p>Web Development</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Section End -->
+            </section>
+        </main>
 
         <!-- Footer Start -->
         <footer class="footer">
-            <div class="footer-top">
+            <div class="footer-top" style="padding: 60px 0 40px 0;">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 footer-info">
-                            <h3>GO GREEN</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tortor commodo, sollicitudin velit nec, lobortis erat. Sed rutrum metus ac augue scelerisque, vel commodo erat commodo. Mauris quis mattis sem. Maecenas dictum nunc.
-                            </p>
+
+                    <!-- Header Row: Title & Social Links -->
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-8">
+                            <h4 class="footer-offices-title">Our Office Locations</h4>
+                            <div class="footer-offices-divider"></div>
                         </div>
-
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>About Us</h4>
-                            <ul>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Home</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">About us</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Our services</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Terms & condition</a></li>
-                                <li><i class="ion-md-arrow-dropright"></i> <a href="#">Privacy policy</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 footer-contact">
-                            <h4>Contact Us</h4>
-                            <p>
-                                Your Location<br>
-                                Your City<br>
-                                Your Country <br>
-                                <strong>Phone:</strong> +123-456-7890<br>
-                                <strong>Email:</strong> info@example.com<br>
-                            </p>
-
-                            <div class="social-links">
-                                <a href="https://freewebsitecode.com/"><i class="ion-logo-twitter"></i></a>
-                                <a href="https://facebook.com/freewebsitecode/"><i class="ion-logo-facebook"></i></a>
-                                <a href="https://freewebsitecode.com/"><i class="ion-logo-linkedin"></i></a>
-                                <a href="https://freewebsitecode.com/"><i class="ion-logo-instagram"></i></a>
-                                <a href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="ion-logo-youtube"></i></a>
+                        <div class="col-md-4 text-md-right mb-3 mb-md-0">
+                            <div class="social-links d-inline-flex gap-2">
+                                <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                <a href="#"><i class="ion-logo-instagram"></i></a>
                             </div>
+                        </div>
+                    </div>
 
+                    <!-- Borderless Office Locations Grid -->
+                    <div class="row g-3">
+                        
+                        <!-- Benin (Head Office) -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Benin <span class="head-tag">Head Office</span></h5>
+                                <p>5, Hudson Lane,<br>Off Akpakpava Street,<br>P.O. Box 420.</p>
+                                <strong>Phone:</strong> <a href="tel:08036666837">08036666837</a>
+                            </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 footer-newsletter">
-                            <h4>Subscription</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
-                            <form action="" method="post">
-                                <input type="email" name="email"><input type="submit"  value="Subscribe">
-                            </form>
+                        <!-- Lagos Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Lagos</h5>
+                                <p>68, Shyllon Street,<br>Off Ikorodu Road,<br>Palm Grove.</p>
+                                <strong>Phone:</strong> <a href="tel:08165304735">08165304735</a>
+                            </div>
+                        </div>
+
+                        <!-- Port Harcourt Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Port Harcourt</h5>
+                                <p>3, Worukwo Street,<br>Off Olu Obasanjo Way.</p>
+                                <strong>Phone:</strong> <a href="tel:08035430664">08035430664</a>
+                            </div>
+                        </div>
+
+                        <!-- Warri Office -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="office-card">
+                                <h5>Warri</h5>
+                                <p>31, Warri/Effurun Road,<br>P.O. Box 541.</p>
+                                <strong>Phone:</strong> <a href="tel:08035430664">08035430664</a>
+                            </div>
                         </div>
 
                     </div>
+
                 </div>
             </div>
 
             <div class="container">
-                <div class="copyright">
-                    &copy; Copyright <a href="https://freewebsitecode.com/">Your Site Name</a>. All Rights Reserved<br>
-					Template By <a href="https://sudeep-portfolio.netlify.app">@SudeepAcharjee</a>
+                <div class="copyright text-center py-3">
+                    &copy; Copyright <strong>Anjous Uku Eweka & Co.</strong> All Rights Reserved
                 </div>
             </div>
         </footer>
