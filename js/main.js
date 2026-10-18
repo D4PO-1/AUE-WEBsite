@@ -112,7 +112,8 @@
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        filter: '.pub-fed' // Defaults the initial load state to Federal Government items
     });
 
     $('#portfolio-flters li').on('click', function () {
