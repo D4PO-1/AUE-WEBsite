@@ -58,32 +58,97 @@
                 text-align: center;
             }
 
-            /* Custom Styling to Stack Image on Top and Scale Up the Section */
-            .about-row-stacked {
-                padding: 30px 0;
+            /* Custom Full-Page Translucent Background for the Entire About Section */
+            .about-full-bg {
+                position: relative;
+                width: 100%;
+                padding-top: 60px;
+                padding-bottom: 80px;
+                background: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url('img/about.jpg') no-repeat center center;
+                background-size: cover;
+                background-attachment: fixed;
             }
 
-            .about-stacked-img-wrapper {
+            .about-translucent-content {
+                font-size: 1.15rem;
+                line-height: 1.85;
+                color: #2d3748;
+                margin-bottom: 50px;
+            }
+
+            .about-translucent-content .lead-intro {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: #1a202c;
                 margin-bottom: 25px;
             }
 
-            .about-stacked-img {
-                width: 100%;
-                max-height: 520px;
-                object-fit: cover;
+            /* Uniform Insights-Inspired Card Styling for Vision, Mission, Objective */
+            .about-card-uniform {
+                border: none !important;
+                outline: none !important;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+                background: #ffffff !important;
+                padding: 25px 20px;
+                margin-bottom: 30px;
                 border-radius: 8px;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                transition: transform 0.3s ease;
             }
 
-            .about-stacked-content {
-                font-size: 1.15rem;
-                line-height: 1.8;
+            .about-card-uniform:hover {
+                transform: translateY(-4px);
             }
 
-            .about-stacked-content .title {
-                font-size: 2.25rem;
-                font-weight: 700;
+            .about-card-img-wrapper {
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                border-radius: 6px;
                 margin-bottom: 20px;
+                background-color: #e2e8f0;
+                position: relative;
+            }
+
+            .about-card-img-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .about-card-icon-badge {
+                position: absolute;
+                bottom: 12px;
+                right: 12px;
+                background: #10b981;
+                color: #ffffff;
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            }
+
+            .about-card-uniform h4 {
+                font-weight: 700;
+                font-size: 1.25rem;
+                color: #0A2540;
+                margin-bottom: 12px;
+                line-height: 1.4;
+            }
+
+            .about-card-uniform p {
+                color: #526484;
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-bottom: 0;
             }
 
             /* Custom Borderless Multi-Office Footer Layout & Styling */
@@ -159,8 +224,8 @@
                     padding: 0;
                 }
 
-                .about-stacked-content .title {
-                    font-size: 1.75rem;
+                .about-full-bg {
+                    background-attachment: scroll;
                 }
             }
 
@@ -228,8 +293,8 @@
         </section>
         <!-- Banner Section End-->
 
-        <!-- About Us Section Start-->
-        <section class="about">
+        <!-- About Us Section Start (Spanning Entire Content Background) -->
+        <section class="about about-full-bg">
             <div class="container">
                 <header class="section-header">
                     <h3>About Us</h3>
@@ -238,70 +303,66 @@
                     </p>
                 </header>
 
-                <!-- Stacked & Scaled-Up Welcome Section -->
-                <div class="row about-row-stacked">
-                    <div class="col-12 about-stacked-img-wrapper text-center">
-                        <img src="img/about.jpg" alt="Welcome Image" class="img-fluid about-stacked-img">
-                    </div>
-                    <div class="col-12 about-stacked-content text-center">
-                        <h2 class="title"><a href="#"></a></h2>
+                <!-- Intro Description Block -->
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 about-translucent-content text-center">
+                        <p class="lead-intro">
+                            Anjous, Uku, Eweka & Co. employs a crop of well seasoned and highly experienced professionals dedicated to excellence in their individual approach to providing solutions to varied accountancy and management problems.
+                        </p>
                         <p>
-Anjous, Uku, Eweka & Co. employs a crop of well seasoned and highly experienced professionals dedicated to excellence in their individual approach to providing solutions to varied accountancy and management problems.
-
-Building on our five decades of stability, we continually integrate modern technology and refined analytical tools into our advisory framework. This enables our experts to address increasingly dynamic statutory demands, modern tax regulations, and complex financial risk models with speed and rigorous precision.
-
-Driven by a culture of integrity and discretion, we view every engagement as a long-term strategic partnership. Beyond standard compliance, our goal is to safeguard institutional value, uncover operational efficiencies, and empower our clients to make sound, forward-looking decisions in an evolving economy.                        </p>
-                        <div class="read-more">
-                            <a href="#">Read More</a>
-                        </div>
+                            Building on our five decades of stability, we continually integrate modern technology and refined analytical tools into our advisory framework. This enables our experts to address increasingly dynamic statutory demands, modern tax regulations, and complex financial risk models with speed and rigorous precision.
+                        </p>
+                        <p class="mb-0">
+                            Driven by a culture of integrity and discretion, we view every engagement as a long-term strategic partnership. Beyond standard compliance, our goal is to safeguard institutional value, uncover operational efficiencies, and empower our clients to make sound, forward-looking decisions in an evolving economy.
+                        </p>
                     </div>
                 </div>
 
-                <div class="row about-cols">
-                    <div class="col-md-4">
-                        <div class="about-col">
-                            <div class="img">
-                                <img src="img/about-mission.jpg" alt="" class="img-fluid">
-                                <div class="icon"><i class="ion-ios-disc"></i></div>
-                            </div>
-                            <h2 class="title"><a href="#">Our Mission</a></h2>
-                            <p>
-                                Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis
-                            </p>
-                            <div class="read-more">
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="about-col">
-                            <div class="img">
-                                <img src="img/about-vision.jpg" alt="" class="img-fluid">
-                                <div class="icon"><i class="ion-ios-eye"></i></div>
-                            </div>
-                            <h2 class="title"><a href="#">Our Vision</a></h2>
-                            <p>
-                                Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis
-                            </p>
-                            <div class="read-more">
-                                <a href="#">Read More</a>
+                <div class="row">
+                    <!-- Vision Card -->
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="about-card-uniform w-100">
+                            <div>
+                                <div class="about-card-img-wrapper">
+                                    <img src="img/about-vision.jpg" alt="Our Vision">
+                                    <div class="about-card-icon-badge"><i class="ion-ios-eye"></i></div>
+                                </div>
+                                <h4>Our Vision</h4>
+                                <p>
+                                    To be the premier accounting and business advisory firm recognized for absolute integrity, financial clarity, and transformational value creation across industries.
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="about-col">
-                            <div class="img">
-                                <img src="img/about-objective.jpg" alt="" class="img-fluid">
-                                <div class="icon"><i class="ion-ios-options"></i></div>
+                    <!-- Mission Card -->
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="about-card-uniform w-100">
+                            <div>
+                                <div class="about-card-img-wrapper">
+                                    <img src="img/about-mission.jpg" alt="Our Mission">
+                                    <div class="about-card-icon-badge"><i class="ion-ios-disc"></i></div>
+                                </div>
+                                <h4>Our Mission</h4>
+                                <p>
+                                    Deliver rigorous, compliant, and bespoke financial, tax, and audit services that safeguard corporate assets, optimize performance, and drive sustainable growth.
+                                </p>
                             </div>
-                            <h2 class="title"><a href="#">Our Objective</a></h2>
-                            <p>
-                                Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis
-                            </p>
-                            <div class="read-more">
-                                <a href="#">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- Objective Card -->
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="about-card-uniform w-100">
+                            <div>
+                                <div class="about-card-img-wrapper">
+                                    <img src="img/about-objective.jpg" alt="Our Objective">
+                                    <div class="about-card-icon-badge"><i class="ion-ios-options"></i></div>
+                                </div>
+                                <h4>Our Objective</h4>
+                                <p>
+                                    Empower our clients through proactive financial risk management, seamless statutory reporting, and strategic tax strategies tailored to complex corporate landscapes.
+                                </p>
                             </div>
                         </div>
                     </div>
