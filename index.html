@@ -148,77 +148,61 @@
 
             /* --- Borderless "Who Are We?" Section Styles --- */
             .who-are-we-section {
-                padding: 90px 0;
-                background-color: #f9fafb;
+                padding: 100px 0;
+                position: relative;
+                background: linear-gradient(rgba(249, 250, 251, 0.70), rgba(249, 250, 251, 0.70)), url('img/who-are-we.jpg') center/cover no-repeat;
                 border: none !important;
+            }
+
+            .who-are-we-container {
+                max-width: 850px;
+                margin: 0 auto;
+                text-align: center;
+                position: relative;
+                z-index: 2;
             }
 
             .who-are-we-header {
                 text-align: center;
-                margin-bottom: 50px;
+                margin-bottom: 40px;
             }
 
             .who-are-we-header h2 {
-                font-size: 2rem;
+                font-size: 2.95rem;
                 font-weight: 700;
-                color: #2d3748;
+                color: #1a202c;
                 letter-spacing: 1.5px;
                 text-transform: uppercase;
-                margin-bottom: 8px;
+                margin-bottom: 12px;
             }
 
             .who-are-we-divider {
                 width: 70px;
-                border-top: 2px ;
+                border-top: 2px solid #10b981;
                 margin: 0 auto 20px auto;
             }
 
             .who-are-we-header p {
-                font-size: 1.05rem;
-                color: #718096;
+                font-size: 1.1rem;
+                color: #4a5568;
                 max-width: 750px;
                 margin: 0 auto;
                 line-height: 1.6;
             }
 
-            .who-are-we-content {
-                display: flex;
-                align-items: center;
-                gap: 40px;
-                border: none !important;
-            }
-
-            .who-are-we-image-col {
-                flex: 1;
-                border: none !important;
-            }
-
-            .who-are-we-img {
-                width: 100%;
-                height: 380px;
-                object-fit: cover;
-                border-radius: 4px;
-                border: none !important;
-                box-shadow: none !important;
-            }
-
-            .who-are-we-text-col {
-                flex: 1;
-                border: none !important;
-            }
-
-            .who-are-we-text-col h3 {
+            .who-are-we-text-content h3 {
                 font-size: 1.8rem;
                 font-weight: 700;
                 color: #1a202c;
                 margin-bottom: 20px;
             }
 
-            .who-are-we-text-col p {
-                font-size: 1.02rem;
-                color: #4a5568;
+            .who-are-we-text-content p {
+                font-size: 1.05rem;
+                color: #2d3748;
                 line-height: 1.8;
                 margin-bottom: 20px;
+                text-align: center;
             }
 
             /* --- Insights Preview Section Styles --- */
@@ -617,15 +601,6 @@
                     font-size: 0.9rem !important;
                 }
 
-                .who-are-we-content {
-                    flex-direction: column;
-                    gap: 25px;
-                }
-
-                .who-are-we-img {
-                    height: 240px;
-                }
-
                 .insights-preview-section,
                 .cta-accountant-section,
                 .who-are-we-section {
@@ -790,20 +765,14 @@
             <!-- 1. BORDERLESS "WHO ARE WE?" SECTION -->
             <section class="who-are-we-section">
                 <div class="container">
-                    <div class="who-are-we-header">
-                        <h2>WHO ARE WE?</h2>
-                        <div class="who-are-we-divider"></div>
-                        <p>Delivering financial clarity, corporate compliance, and advisory expertise with roots anchored in integrity and excellence.</p>
-                    </div>
-
-                    <div class="who-are-we-content">
-                        <!-- Left Column: Linked Image -->
-                        <div class="who-are-we-image-col">
-                            <img src="img/who-are-we.jpg" alt="Anjous Uku Eweka & Co. Office" class="who-are-we-img">
+                    <div class="who-are-we-container">
+                        <div class="who-are-we-header">
+                            <h2>WHO ARE WE?</h2>
+                            <div class="who-are-we-divider"></div>
+                            <p>Delivering financial clarity, corporate compliance, and advisory expertise with roots anchored in integrity and excellence.</p>
                         </div>
 
-                        <!-- Right Column: Firm Overview Text -->
-                        <div class="who-are-we-text-col">
+                        <div class="who-are-we-text-content">
                             <h3>Rooted in Heritage, Committed to Growth</h3>
                             <p>
                                 Anjous, Uku, Eweka & Co. is a multi-disciplinary firm of consultants and management experts, established over 51 years in Nigeria with offices in Benin, Warri, Port Harcourt, Lagos and Abuja we work with companies and organisations with foot prints in the public and private sectors of the economy.
